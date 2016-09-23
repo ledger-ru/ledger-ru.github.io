@@ -6,8 +6,353 @@
     <description>Recent content on Личные финансы для гиков</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Wed, 21 Sep 2016 11:55:15 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 23 Sep 2016 14:56:31 +0300</lastBuildDate>
     <atom:link href="https://ledger-ru.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Шпаргалка</title>
+      <link>https://ledger-ru.github.io/cheatsheet/</link>
+      <pubDate>Fri, 23 Sep 2016 14:56:31 +0300</pubDate>
+      
+      <guid>https://ledger-ru.github.io/cheatsheet/</guid>
+      <description>
+
+&lt;h2 id=&#34;ledger-cli&#34;&gt;Ledger cli&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://ricostacruz.com/cheatsheets/ledger.html&#34;&gt;источник&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Баланс:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ledger bal
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Список транзакций:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ledger reg
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Список транзакций с фильтром:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ledger reg Продукты # покажет только операции по расходам на продукты
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Баланс с фильтром:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ledger bal Расходы  # проверка, не ошибся ли я при вводе данных
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Параметры cli:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  -b 01/01   # --начало периода
+  -e 01/31   # --конец периода
+  -S date    # --сортировка по дате / сумме
+  -S amount
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;примеры&#34;&gt;Примеры&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;# расхождения
+  ledger bal Аренда Транспорт  		# только по этим статьям
+  ledger bal Доход and Работа       # по всем
+  ledger bal Расходы and not (Напитки or Еда)
+
+# на что я больше всего потратил? (--sorted)
+  ledger reg Расходы -S amount
+
+# сколько у меня есть на определенную дату? (--end)
+  ledger bal -e 01/15 ^Активы ^Обязательства
+
+# сколько я потратил и заработал в этом месяце?
+  ledger bal ^Расходы ^Доходы --invert
+
+# сколько было потрачено в течение 3 дней? (всего)
+  ledger reg -b 01/25 -e 01/27 --subtotal
+  ledger reg -b 01/25 -e 01/27 --subtotal grocery
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;формат&#34;&gt;Формат&lt;/h2&gt;
+
+&lt;p&gt;Типовая транзакция:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;2013/01/03 * Аренда в январе
+  Расходы:Аренда   600 руб
+  Активы:Копилка
+
+* = подтверждена
+! = не подтверждена
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Двойная дата:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;2008/01/01=2008/01/14 Client invoice  ;  крайняя дата платежа
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Выравнивание баланса:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;2008/01/01 * Баланс наличности
+  Активы:Наличные   = $500
+  Капитал:Выравнивание
+
+2008/01/01 * KFC
+  Расходы:Еда  		$20
+  Активы:Наличные   = $500 ; выясним, что нужно сделать, чтобы баланс стал $500
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Товары с ценой&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;; цена за штуку
+2010/05/31 * Рынок
+  Активы:Холодильник                35 яблок @ $0.42
+  Активы:Наличные
+
+; общая сумма
+2010/05/31 * Рынок
+  Активы:Холодильник                35 яблок @@ $14.70
+  Активы:Наличные
+
+; фиксированные цены
+2010/05/31 * Бензин
+  Расходы:Бензин             		11 GAL {=$2.299}
+  Активы:Наличные
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Установка своей валюты:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;commodity $
+         note Американский доллар
+         format $1,000.00
+         nomarket
+         default
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Бюджетирование - месячное и годовое:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;~ Monthly
+  Расходы:Аренда  $500
+  Расходы:Еда  	  $100
+  Расходы         $40 ; все остальное
+  Активы
+
+~ Yearly
+
+; ledger bal --budget Расходы
+; ledger bal --unbudgeted Расходы
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Комментарии:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;; строчный комментарий
+# и это строчный комментарий
+% и это строчный комментарий
+| и это строчный комментарий
+* и это тоже строчный комментарий
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Периоды:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[interval] [begin] [end]
+
+interval:
+  every day|week|month|quarter|year
+  every N days|weeks|...
+  daily|weekly|...
+begin:
+  from &amp;lt;spec&amp;gt;
+end:
+  to &amp;lt;spec&amp;gt;
+spec:
+  2004
+  2004/10/1
+
+$ ledger bal|reg --period &amp;quot;until aug&amp;quot;
+$ ledger bal|reg --period &amp;quot;last oct&amp;quot;
+$ ledger bal|reg --period &amp;quot;every week&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;команда Register:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ledger reg
+  -D, --daily
+  -W, --weekly
+  -M, --monthly
+  --quarterly
+  -Y, --yearly
+  -s, --subtotal
+  --start-of-week monday
+
+  -S, --sort date
+  -S, --sort amount
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Фильтры:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    -b, --begin DATE
+    -e, --end DATE
+
+    -d payee =~ /pioneer/
+
+    -C, --cleared    # (с *)
+    -U, --uncleared  # (без *)
+    --pending        # (с !)
+
+    -R, --real       # игнорить виртуальные операции (типа: &amp;quot;(Наличные)  $-400&amp;quot;)
+    -L, --actual     # без автоматических операций (типа: &amp;quot;= /^Доход/&amp;quot;)
+
+    -r, --related   # покажет другую сторону
+                    # &amp;quot;reg -r Накопления&amp;quot; покажет откуда они взялись
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Запросы:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;^regex$ 
+@payee
+%tag
+=note
+#code
+term and term
+term or term
+not term
+\( term \)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Пример:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ledger r ^Расходы and @Сын
+ledger r Еда and @Старбакс and not Обед
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Отображение:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;-n, --collapse       # [register] свернуть записи
+                     # [balance] без общих итогов
+-s, --subtotal       # [balance] показывать субсчета
+                     # [other] отображать подытоги
+--flat
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;примеры-1&#34;&gt;Примеры&lt;/h2&gt;
+
+&lt;p&gt;Проверка транзакций:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# вывести расходы за октябрь (--period)
+  ledger r Расходы -p oct
+
+# наибольшие расходы? (--sorted)
+  ledger r Расходы -S amount --tail 10
+
+# сколько потратили на продукты? (--weekly, --monthly)
+  ledger r Продукты
+  ledger r Продукты -W # за неделю
+  ledger r Продукты -M # за месяц
+
+# на что я потратил деньги с карты Mastercard? (--period, --begin, --end)
+  ledger r mastercard
+  ledger r mastercard -p &amp;quot;january&amp;quot;
+  ledger r mastercard -b 01/25 -e 01/31
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Вывод отчетов:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# вывести ежемесячный баланс банковского счета
+  ledger r Накопления -M
+
+# ежемесячные расходы (-n = --collapse)
+  ledger r Расходы -M -n
+
+# ...а сколько в среднем за месяц?
+  ledger r Расходы -M -n --average
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Еще проще:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# что я вчера делал?
+# ..список вчерашних транзакций
+  ledger r -p 01/26
+  ledger r -p yesterday
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Конвертации:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# а что если все представить в USD? (--exchange)
+  ledger b Активы -X USD
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;ledger-csv&#34;&gt;ledger csv&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ledger csv
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Пример вывода:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;date         , ?  , desc     , account            , currency , amt     , pending/cleared , ?
+&amp;quot;2013/09/02&amp;quot; , &amp;quot;&amp;quot; , &amp;quot;шмотки&amp;quot; , &amp;quot;Активы:Наличные&amp;quot;      , &amp;quot;P&amp;quot;      , &amp;quot;-2000&amp;quot; , &amp;quot;*&amp;quot;             , &amp;quot;&amp;quot;
+&amp;quot;2013/09/02&amp;quot; , &amp;quot;&amp;quot; , &amp;quot;шмотки&amp;quot; , &amp;quot;Обязательства:Кредитка&amp;quot; , &amp;quot;P&amp;quot;      , &amp;quot;-200&amp;quot;  , &amp;quot;*&amp;quot;             , &amp;quot;&amp;quot;
+&amp;quot;2013/09/02&amp;quot; , &amp;quot;&amp;quot; , &amp;quot;шмотки&amp;quot; , &amp;quot;Расходы:Шмотки&amp;quot;  , &amp;quot;P&amp;quot;      , &amp;quot;2200&amp;quot;  , &amp;quot;*&amp;quot;             , &amp;quot;&amp;quot;
+&amp;quot;2013/09/04&amp;quot; , &amp;quot;&amp;quot; , &amp;quot;прочее&amp;quot;  , &amp;quot;Активы:Наличные&amp;quot;      , &amp;quot;P&amp;quot;      , &amp;quot;-20&amp;quot;   , &amp;quot;*&amp;quot;             , &amp;quot;&amp;quot;
+&amp;quot;2013/09/04&amp;quot; , &amp;quot;&amp;quot; , &amp;quot;прочее&amp;quot;  , &amp;quot;Расходы:Прочие&amp;quot;  , &amp;quot;P&amp;quot;      , &amp;quot;20&amp;quot;    , &amp;quot;*&amp;quot;             , &amp;quot;&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;формат-ledger&#34;&gt;Формат ledger&lt;/h2&gt;
+
+&lt;p&gt;Первая строка:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;2015/01/01 *       Аренда       ; тэг:
+^          ^       ^
+Дата       Флаг    Описание     ^ комментарий/тэг
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Алиасы (псевдонимы)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;alias Налик = Активы:Наличные
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Указание года по-умолчанию:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Y2015           ; год по-умолчанию (когда вы введете 01/25, год будет высчитан из умолчания)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>index</title>
+      <link>https://ledger-ru.github.io/tutorial/</link>
+      <pubDate>Fri, 23 Sep 2016 14:56:11 +0300</pubDate>
+      
+      <guid>https://ledger-ru.github.io/tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Снимки экрана</title>
+      <link>https://ledger-ru.github.io/screenshots/</link>
+      <pubDate>Fri, 23 Sep 2016 14:10:41 +0300</pubDate>
+      
+      <guid>https://ledger-ru.github.io/screenshots/</guid>
+      <description>
+
+&lt;h2 id=&#34;дерево-статей&#34;&gt;дерево статей&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://ledger-ru.github.io/hledger-tree.png&#34; alt=&#34;hledger tree&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;ввод-транзакций-с-hledger-add&#34;&gt;ввод транзакций с hledger add&lt;/h2&gt;
+
+&lt;script type=&#34;text/javascript&#34; src=&#34;https://asciinema.org/a/05doz7160zb7ath81z284bq9e.js&#34; id=&#34;asciicast-05doz7160zb7ath81z284bq9e&#34; async=&#34;&#34;&gt;&lt;/script&gt;
+
+&lt;h2 id=&#34;отчеты&#34;&gt;отчеты&lt;/h2&gt;
+
+&lt;p&gt;Просмотр баланса &lt;a href=&#34;http://www.vincecima.com/2016/06/12/the-surprising-ease-of-plain-text-accounting.html&#34;&gt;*&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;hledger balance (так же и в ledger bal):
+&lt;img src=&#34;https://ledger-ru.github.io/hledgerbal.png&#34; alt=&#34;hledger balance&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Помесячный баланс &lt;a href=&#34;http://www.vincecima.com/2016/06/12/the-surprising-ease-of-plain-text-accounting.html&#34;&gt;*&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;hledger balance ^assets ^liab &amp;ndash;depth 2 -M -H:
+&lt;img src=&#34;https://ledger-ru.github.io/hledgerbalM.png&#34; alt=&#34;hledger balance ^assets ^liab --depth 2 -M -H&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Бухгалтерия для гика</title>

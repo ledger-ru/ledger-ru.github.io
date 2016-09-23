@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="ru">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>Шпаргалка - Личные финансы для гиков</title>
+    <meta name="generator" content="Hugo 0.16" />
+
+    
+    <meta name="description" content="Ledger по-русски">
+    
+    <link rel="canonical" href="https://ledger-ru.github.io/cheatsheet/">
+    
+    <meta name="author" content="Igor Fokusov">
+    
+
+    <meta property="og:url" content="https://ledger-ru.github.io/cheatsheet/">
+    <meta property="og:title" content="Личные финансы для гиков">
+    <meta property="og:image" content="https://ledger-ru.github.io/images/logo.png">
+    <meta name="apple-mobile-web-app-title" content="Личные финансы для гиков">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://ledger-ru.github.io/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="https://ledger-ru.github.io/images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'icomoon';
+        src: url('https://ledger-ru.github.io/fonts/icomoon.eot?52m981');
+        src: url('https://ledger-ru.github.io/fonts/icomoon.eot?#iefix52m981')
+               format('embedded-opentype'),
+             url('https://ledger-ru.github.io/fonts/icomoon.woff?52m981')
+               format('woff'),
+             url('https://ledger-ru.github.io/fonts/icomoon.ttf?52m981')
+               format('truetype'),
+             url('https://ledger-ru.github.io/fonts/icomoon.svg?52m981#icomoon')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="https://ledger-ru.github.io/stylesheets/application.css">
+    <link rel="stylesheet" href="https://ledger-ru.github.io/stylesheets/temporary.css">
+    <link rel="stylesheet" href="https://ledger-ru.github.io/stylesheets/palettes.css">
+    <link rel="stylesheet" href="https://ledger-ru.github.io/stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,700|Roboto&#43;Mono">
+    <style>
+      body, input {
+        font-family: 'Roboto', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Roboto Mono', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <script src="https://ledger-ru.github.io/javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-blue-grey palette-accent-blue-grey">
+
+
+
+	
+	
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        Шпаргалка
+      </div>
+    </div>
+
+    
+
+    
+    <div class="button button-github" role="button" aria-label="GitHub">
+      <a href="https://github.com/ledger-ru" title="@ledger-ru on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+    </div>
+    
+    
+    
+    <div class="button button-telegram" role="button" aria-label="Telegram">
+      <a href="https://telegram.me/ledger_ru" title="@ledger_ru on Telegram" target="_blank" class="toggle-button icon icon-telegram"></a>
+    </div>
+        
+    
+        
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Главная" href="https://ledger-ru.github.io/">
+	
+	Главная
+</a>
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Снимки экрана" href="https://ledger-ru.github.io/screenshots/">
+	
+	Снимки экрана
+</a>
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Учебник" href="https://ledger-ru.github.io/tutorial/">
+	
+	Учебник
+</a>
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a class="current" title="Шпаргалка" href="https://ledger-ru.github.io/cheatsheet/">
+	
+	Шпаргалка
+</a>
+
+
+<ul id="scrollspy">
+</ul>
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+        <hr>
+        <span class="section">Автор</span>
+        
+        <ul>
+          
+
+          
+          <li>
+            <a href="https://github.com/ledger-ru" target="_blank" title="@ledger-ru on GitHub">
+              @ledger-ru on GitHub
+            </a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1>Шпаргалка </h1>
+
+			
+
+<h2 id="ledger-cli">Ledger cli</h2>
+
+<p><a href="http://ricostacruz.com/cheatsheets/ledger.html">источник</a></p>
+
+<p>Баланс:</p>
+
+<pre><code>$ ledger bal
+</code></pre>
+
+<p>Список транзакций:</p>
+
+<pre><code>$ ledger reg
+</code></pre>
+
+<p>Список транзакций с фильтром:</p>
+
+<pre><code>$ ledger reg Продукты # покажет только операции по расходам на продукты
+</code></pre>
+
+<p>Баланс с фильтром:</p>
+
+<pre><code>$ ledger bal Расходы  # проверка, не ошибся ли я при вводе данных
+</code></pre>
+
+<p>Параметры cli:</p>
+
+<pre><code>  -b 01/01   # --начало периода
+  -e 01/31   # --конец периода
+  -S date    # --сортировка по дате / сумме
+  -S amount
+</code></pre>
+
+<h2 id="примеры">Примеры</h2>
+
+<pre><code># расхождения
+  ledger bal Аренда Транспорт  		# только по этим статьям
+  ledger bal Доход and Работа       # по всем
+  ledger bal Расходы and not (Напитки or Еда)
+
+# на что я больше всего потратил? (--sorted)
+  ledger reg Расходы -S amount
+
+# сколько у меня есть на определенную дату? (--end)
+  ledger bal -e 01/15 ^Активы ^Обязательства
+
+# сколько я потратил и заработал в этом месяце?
+  ledger bal ^Расходы ^Доходы --invert
+
+# сколько было потрачено в течение 3 дней? (всего)
+  ledger reg -b 01/25 -e 01/27 --subtotal
+  ledger reg -b 01/25 -e 01/27 --subtotal grocery
+</code></pre>
+
+<h2 id="формат">Формат</h2>
+
+<p>Типовая транзакция:</p>
+
+<pre><code>2013/01/03 * Аренда в январе
+  Расходы:Аренда   600 руб
+  Активы:Копилка
+
+* = подтверждена
+! = не подтверждена
+</code></pre>
+
+<p>Двойная дата:</p>
+
+<pre><code>2008/01/01=2008/01/14 Client invoice  ;  крайняя дата платежа
+</code></pre>
+
+<p>Выравнивание баланса:</p>
+
+<pre><code>2008/01/01 * Баланс наличности
+  Активы:Наличные   = $500
+  Капитал:Выравнивание
+
+2008/01/01 * KFC
+  Расходы:Еда  		$20
+  Активы:Наличные   = $500 ; выясним, что нужно сделать, чтобы баланс стал $500
+</code></pre>
+
+<p>Товары с ценой</p>
+
+<pre><code>; цена за штуку
+2010/05/31 * Рынок
+  Активы:Холодильник                35 яблок @ $0.42
+  Активы:Наличные
+
+; общая сумма
+2010/05/31 * Рынок
+  Активы:Холодильник                35 яблок @@ $14.70
+  Активы:Наличные
+
+; фиксированные цены
+2010/05/31 * Бензин
+  Расходы:Бензин             		11 GAL {=$2.299}
+  Активы:Наличные
+</code></pre>
+
+<p>Установка своей валюты:</p>
+
+<pre><code>commodity $
+         note Американский доллар
+         format $1,000.00
+         nomarket
+         default
+</code></pre>
+
+<p>Бюджетирование - месячное и годовое:</p>
+
+<pre><code>~ Monthly
+  Расходы:Аренда  $500
+  Расходы:Еда  	  $100
+  Расходы         $40 ; все остальное
+  Активы
+
+~ Yearly
+
+; ledger bal --budget Расходы
+; ledger bal --unbudgeted Расходы
+</code></pre>
+
+<p>Комментарии:</p>
+
+<pre><code>; строчный комментарий
+# и это строчный комментарий
+% и это строчный комментарий
+| и это строчный комментарий
+* и это тоже строчный комментарий
+</code></pre>
+
+<p>Периоды:</p>
+
+<pre><code>[interval] [begin] [end]
+
+interval:
+  every day|week|month|quarter|year
+  every N days|weeks|...
+  daily|weekly|...
+begin:
+  from &lt;spec&gt;
+end:
+  to &lt;spec&gt;
+spec:
+  2004
+  2004/10/1
+
+$ ledger bal|reg --period &quot;until aug&quot;
+$ ledger bal|reg --period &quot;last oct&quot;
+$ ledger bal|reg --period &quot;every week&quot;
+</code></pre>
+
+<p>команда Register:</p>
+
+<pre><code>$ ledger reg
+  -D, --daily
+  -W, --weekly
+  -M, --monthly
+  --quarterly
+  -Y, --yearly
+  -s, --subtotal
+  --start-of-week monday
+
+  -S, --sort date
+  -S, --sort amount
+</code></pre>
+
+<p>Фильтры:</p>
+
+<pre><code>    -b, --begin DATE
+    -e, --end DATE
+
+    -d payee =~ /pioneer/
+
+    -C, --cleared    # (с *)
+    -U, --uncleared  # (без *)
+    --pending        # (с !)
+
+    -R, --real       # игнорить виртуальные операции (типа: &quot;(Наличные)  $-400&quot;)
+    -L, --actual     # без автоматических операций (типа: &quot;= /^Доход/&quot;)
+
+    -r, --related   # покажет другую сторону
+                    # &quot;reg -r Накопления&quot; покажет откуда они взялись
+</code></pre>
+
+<p>Запросы:</p>
+
+<pre><code>^regex$ 
+@payee
+%tag
+=note
+#code
+term and term
+term or term
+not term
+\( term \)
+</code></pre>
+
+<p>Пример:</p>
+
+<pre><code>ledger r ^Расходы and @Сын
+ledger r Еда and @Старбакс and not Обед
+</code></pre>
+
+<p>Отображение:</p>
+
+<pre><code>-n, --collapse       # [register] свернуть записи
+                     # [balance] без общих итогов
+-s, --subtotal       # [balance] показывать субсчета
+                     # [other] отображать подытоги
+--flat
+</code></pre>
+
+<h2 id="примеры-1">Примеры</h2>
+
+<p>Проверка транзакций:</p>
+
+<pre><code># вывести расходы за октябрь (--period)
+  ledger r Расходы -p oct
+
+# наибольшие расходы? (--sorted)
+  ledger r Расходы -S amount --tail 10
+
+# сколько потратили на продукты? (--weekly, --monthly)
+  ledger r Продукты
+  ledger r Продукты -W # за неделю
+  ledger r Продукты -M # за месяц
+
+# на что я потратил деньги с карты Mastercard? (--period, --begin, --end)
+  ledger r mastercard
+  ledger r mastercard -p &quot;january&quot;
+  ledger r mastercard -b 01/25 -e 01/31
+</code></pre>
+
+<p>Вывод отчетов:</p>
+
+<pre><code># вывести ежемесячный баланс банковского счета
+  ledger r Накопления -M
+
+# ежемесячные расходы (-n = --collapse)
+  ledger r Расходы -M -n
+
+# ...а сколько в среднем за месяц?
+  ledger r Расходы -M -n --average
+</code></pre>
+
+<p>Еще проще:</p>
+
+<pre><code># что я вчера делал?
+# ..список вчерашних транзакций
+  ledger r -p 01/26
+  ledger r -p yesterday
+</code></pre>
+
+<p>Конвертации:</p>
+
+<pre><code># а что если все представить в USD? (--exchange)
+  ledger b Активы -X USD
+</code></pre>
+
+<h2 id="ledger-csv">ledger csv</h2>
+
+<pre><code>$ ledger csv
+</code></pre>
+
+<p>Пример вывода:</p>
+
+<pre><code>date         , ?  , desc     , account            , currency , amt     , pending/cleared , ?
+&quot;2013/09/02&quot; , &quot;&quot; , &quot;шмотки&quot; , &quot;Активы:Наличные&quot;      , &quot;P&quot;      , &quot;-2000&quot; , &quot;*&quot;             , &quot;&quot;
+&quot;2013/09/02&quot; , &quot;&quot; , &quot;шмотки&quot; , &quot;Обязательства:Кредитка&quot; , &quot;P&quot;      , &quot;-200&quot;  , &quot;*&quot;             , &quot;&quot;
+&quot;2013/09/02&quot; , &quot;&quot; , &quot;шмотки&quot; , &quot;Расходы:Шмотки&quot;  , &quot;P&quot;      , &quot;2200&quot;  , &quot;*&quot;             , &quot;&quot;
+&quot;2013/09/04&quot; , &quot;&quot; , &quot;прочее&quot;  , &quot;Активы:Наличные&quot;      , &quot;P&quot;      , &quot;-20&quot;   , &quot;*&quot;             , &quot;&quot;
+&quot;2013/09/04&quot; , &quot;&quot; , &quot;прочее&quot;  , &quot;Расходы:Прочие&quot;  , &quot;P&quot;      , &quot;20&quot;    , &quot;*&quot;             , &quot;&quot;
+</code></pre>
+
+<h2 id="формат-ledger">Формат ledger</h2>
+
+<p>Первая строка:</p>
+
+<pre><code>2015/01/01 *       Аренда       ; тэг:
+^          ^       ^
+Дата       Флаг    Описание     ^ комментарий/тэг
+</code></pre>
+
+<p>Алиасы (псевдонимы)</p>
+
+<pre><code>alias Налик = Активы:Наличные
+</code></pre>
+
+<p>Указание года по-умолчанию:</p>
+
+<pre><code>Y2015           ; год по-умолчанию (когда вы введете 01/25, год будет высчитан из умолчания)
+</code></pre>
+
+<pre><code></code></pre>
+
+
+			<aside class="copyright" role="note">
+				
+				&copy; 2016 MIT license &ndash;
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				
+
+<nav class="pagination" aria-label="Footer">
+  <div class="previous">
+  
+  </div>
+
+  <div class="next">
+  
+      <a href="https://ledger-ru.github.io/tutorial/" title="index">
+        <span class="direction">
+          Next
+        </span>
+        <div class="page">
+          <div class="stretch">
+            <div class="title">
+              index
+            </div>
+          </div>
+          <div class="button button-next" role="button" aria-label="Next">
+            <i class="icon icon-forward"></i>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+</nav>
+
+
+
+
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = 'https:\/\/ledger-ru.github.io\/';
+      var repo_id  = 'digitalcraftsman\/hugo-material-docs';
+    
+    </script>
+
+    <script src="https://ledger-ru.github.io/javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+            
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+        
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "#";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    <script src="//gohugo.io/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

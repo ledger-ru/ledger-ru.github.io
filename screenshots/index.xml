@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Screenshots on Личные финансы для гиков</title>
+    <link>https://ledger-ru.github.io/screenshots/</link>
+    <description>Recent content in Screenshots on Личные финансы для гиков</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <lastBuildDate>Fri, 23 Sep 2016 14:10:41 +0300</lastBuildDate>
+    <atom:link href="https://ledger-ru.github.io/screenshots/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Снимки экрана</title>
+      <link>https://ledger-ru.github.io/screenshots/</link>
+      <pubDate>Fri, 23 Sep 2016 14:10:41 +0300</pubDate>
+      
+      <guid>https://ledger-ru.github.io/screenshots/</guid>
+      <description>
+
+&lt;h2 id=&#34;дерево-статей&#34;&gt;дерево статей&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://ledger-ru.github.io/hledger-tree.png&#34; alt=&#34;hledger tree&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;ввод-транзакций-с-hledger-add&#34;&gt;ввод транзакций с hledger add&lt;/h2&gt;
+
+&lt;script type=&#34;text/javascript&#34; src=&#34;https://asciinema.org/a/05doz7160zb7ath81z284bq9e.js&#34; id=&#34;asciicast-05doz7160zb7ath81z284bq9e&#34; async=&#34;&#34;&gt;&lt;/script&gt;
+
+&lt;h2 id=&#34;отчеты&#34;&gt;отчеты&lt;/h2&gt;
+
+&lt;p&gt;Просмотр баланса &lt;a href=&#34;http://www.vincecima.com/2016/06/12/the-surprising-ease-of-plain-text-accounting.html&#34;&gt;*&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;hledger balance (так же и в ledger bal):
+&lt;img src=&#34;https://ledger-ru.github.io/hledgerbal.png&#34; alt=&#34;hledger balance&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Помесячный баланс &lt;a href=&#34;http://www.vincecima.com/2016/06/12/the-surprising-ease-of-plain-text-accounting.html&#34;&gt;*&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;hledger balance ^assets ^liab &amp;ndash;depth 2 -M -H:
+&lt;img src=&#34;https://ledger-ru.github.io/hledgerbalM.png&#34; alt=&#34;hledger balance ^assets ^liab --depth 2 -M -H&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
