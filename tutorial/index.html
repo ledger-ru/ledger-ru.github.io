@@ -9,7 +9,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
-    <title>index - Личные финансы для гиков</title>
+    <meta name="google-site-verification" content="BRLJtg-Dz8fP9vutxOptMH3zMLYUI4XtK-mys0qoEIw" />
+    <title>Учебник Ledger - Личные финансы для гиков</title>
     <meta name="generator" content="Hugo 0.16" />
 
     
@@ -97,7 +98,7 @@
     </div>
     <div class="stretch">
       <div class="title">
-        index
+        Учебник Ledger
       </div>
     </div>
 
@@ -185,6 +186,23 @@
 
 
 
+<a  title="Установка" href="https://ledger-ru.github.io/install/">
+	
+	Установка
+</a>
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
 <a class="current" title="Учебник" href="https://ledger-ru.github.io/tutorial/">
 	
 	Учебник
@@ -243,9 +261,115 @@
 
 	<article class="article">
 		<div class="wrapper">
-			<h1>index </h1>
+			<h1>Учебник Ledger </h1>
 
 			
+
+<p>Основные моменты учета в ledger (на русском) описаны в статьях <a href="http://softdroid.net/planirovanie-finansov-ledger">Планирование финансов через командную стоку в ledger</a> и <a href="https://bronevichok.ru/blog/2014/09/27/personal-finances-with-ledger-1.html">Финансовый учёт с ledger</a>. Для общего развития рекомендую ознакомиться с ними.</p>
+
+<h2 id="немного-теории">Немного теории</h2>
+
+<p>Счетом мы называем любой вид Дохода/Расхода, а также любое &ldquo;место&rdquo;, откуда/куда приходят деньги. Кто-то называет их категориями, но суть от этого не меняется.</p>
+
+<p>Обычно заводят такие счета как &ldquo;Продукты&rdquo;, &ldquo;Авто&rdquo;, &ldquo;Подарки&rdquo;, &ldquo;Зарплата&rdquo;, &ldquo;Наличные&rdquo;, &ldquo;Ипотека&rdquo; и т.п.</p>
+
+<p>В системе двойной записи деньги переходят с одного счета на другой. И при этом отображаются в обоих строках транзакции с разными знаками.
+К примеру, покупка книги за 500 рублей переводит деньги со счета &ldquo;Наличные&rdquo; на счет &ldquo;Книги&rdquo;. Получение зарплаты отражается как перевод денег со счета &ldquo;Зарплата&rdquo; на счет &ldquo;Наличные&rdquo; (ну или &ldquo;Банковская карта&rdquo;). Главное - помнить, что при перемещении денег в итоге должен быть обязательно ноль, иначе баланса не будет.</p>
+
+<p>Итак, мы выяснили, что счета могут быть самые разные, но многие пользователи добавляют такие счета верхнего уровня:</p>
+
+<p>• Расход<br />
+• Доход<br />
+• Активы<br />
+• Обязательства</p>
+
+<h2 id="создайте-файл-журнала">Создайте файл журнала</h2>
+
+<p>В *nix-подобных вы можете создать пустой файл командой</p>
+
+<pre><code>touch tutorial.dat
+</code></pre>
+
+<p>В Windows просто создайте пустой файл в блокноте и сохраните файл под нужным именем, например &ldquo;tutorial.dat&rdquo;. Но тут есть один нюанс: т.к. ledger собран под cygwin, он требует указания имени файла с необычным путем, например, так: &ldquo;/cygdrive/e/tutorial.dat&rdquo; (для диска E:\)</p>
+
+<p>В дальнейшем запускать ledger так: </p>
+
+<pre><code>ledger -f &quot;tutorial.dat&quot; &lt;команда&gt;
+</code></pre>
+
+<p>или так под Windows:</p>
+
+<pre><code>ledger.exe -f &quot;/cygdrive/e/tutorial.dat&quot;
+</code></pre>
+
+<h2 id="файл-для-примера">Файл для примера</h2>
+
+<p>Я создал файл, на котором мы будем тренироваться. Скачайте его и попробуйте поработать с ним для начала:
+<a href="https://gist.github.com/fokusov/d226054c126566a2d4234683407c718d">tutorial.dat</a></p>
+
+<p>Предположим, вы создали файл. Запустим основной отчет - баланс:</p>
+
+<pre><code>ledger.exe -f &quot;/cygdrive/e/tutorial.dat&quot; balance
+</code></pre>
+
+<p>Мы должны получить следующую картину:</p>
+
+<p><img src="https://ledger-ru.github.io/tutorial1.png" alt="tutorial1" /></p>
+
+<p>Здесь мы видим, что у нас есть 1000 руб наличными и долг Василию в 1000 руб, введенные начальными остатками. Остатки введены специально для того, чтобы показать, как начать вести журнал не с чистого листа, а переносом остатков.</p>
+
+<p>Попробуйте запустить отчет с фильтром:</p>
+
+<pre><code>ledger.exe -f &quot;/cygdrive/e/tutorial.dat&quot; balance Наличные
+</code></pre>
+
+<p>так мы увидим только транзакции с наличными. Фильтры будут рассматриваться еще не раз в дальнейшем.</p>
+
+<h2 id="создание-транзакций">Создание транзакций</h2>
+
+<p>Откройте файл любимым редактором (я рекомендую Vim/Emacs или SublimeText3 с плагином подсветки/дополнения) и добавьте следующую операцию:</p>
+
+<pre><code>2016/09/01 * Зарплата
+	Кошелек:Наличные		10000 руб
+	Доходы:Зарплата
+</code></pre>
+
+<p>Вкратце поясню что мы написали, но рекомендую ознакомиться с <a href="https://ledger-ru.github.io/cheatsheet/#формат-ledger">форматом записи ledger</a>. У нас описана операция получения зарплаты в размере 10000 руб от 1 сентября. В ней мы зачисляем 10000 руб на счет &ldquo;Кошелек:Наличные&rdquo; со счета &ldquo;Доходы:Зарплата&rdquo;. Вы можете указать сумму с минусом напротив счета &ldquo;Доходы:Зарплата&rdquo;, но это не обязательно и важно только в транзакциях с тремя и больше строками. Ledger сам автоматически понимает, что с другой стороны проводки нужная нам сумма. Запустите отчет баланса:</p>
+
+<pre><code>E:\soft\ledger\ledger.exe -f &quot;/cygdrive/e/tutorial.dat&quot; balance
+           -1000 руб  Долги:Василий
+          -10000 руб  Доходы:Зарплата
+           11000 руб  Кошелек:Наличные
+--------------------
+                   0
+</code></pre>
+
+<p>Ноль под чертой очень важен и показывает, что у нас все транзакции записаны правильно с точки зрения двойной записи. А остаток в кошельке у нас 11 000 руб.</p>
+
+<p><strong>Теперь вы видите насколько просто вести учет денег с ledger?</strong></p>
+
+<p>Вы спросите, почему Доходы показаны с минусом? Если кратко, то в двойной записи деньги (как и любая другая ценность) должны откуда-то переместиться куда-то. В нашем примере они пришли со статьи дохода на статью расхода. Поэтому на счете поступления показан плюсовой остаток, ну а на другом счете - отрицательный. Или другими словами, на счете дохода их стало меньше, чем в нашем кошельке :)</p>
+
+<p>Введем еще одну операцию:</p>
+
+<pre><code>2016/09/05 * Бензин
+	Кошелек:Наличные
+	Расходы:Авто		1000 руб
+</code></pre>
+
+<p>Чаще всего нужен ответ на вопрос &ldquo;Сколько я трачу в месяц на &hellip;?&rdquo; Увидеть это можно так:</p>
+
+<pre><code>E:\soft\ledger\ledger.exe -f &quot;/cygdrive/e/tutorial.dat&quot; -M register Расходы:Авто
+
+16-Sep-01 - 16-Sep-30              Расходы:Авто                       1000 руб       1000 руб
+</code></pre>
+
+<h2 id="активы-и-обязательства">Активы и обязательства</h2>
+
+<p>Актив это то, чем вы владеете. Обязательства это то, что вы заняли у кого-то или, другими словами, долги.</p>
+
+<p>Например, счет &ldquo;Кошелек:Наличные&rdquo; - это актив. Обязательства это, например, кредитка или банковский кредит.</p>
+
 
 			<aside class="copyright" role="note">
 				
@@ -259,53 +383,6 @@
 
 			<footer class="footer">
 				
-
-<nav class="pagination" aria-label="Footer">
-  <div class="previous">
-  
-      <a href="https://ledger-ru.github.io/cheatsheet/" title="Шпаргалка">
-        <span class="direction">
-          Previous
-        </span>
-        <div class="page">
-          <div class="button button-previous" role="button" aria-label="Previous">
-            <i class="icon icon-back"></i>
-          </div>
-          <div class="stretch">
-            <div class="title">
-              Шпаргалка
-            </div>
-          </div>
-        </div>
-      </a>
-  
-  </div>
-
-  <div class="next">
-  
-      <a href="https://ledger-ru.github.io/screenshots/" title="Снимки экрана">
-        <span class="direction">
-          Next
-        </span>
-        <div class="page">
-          <div class="stretch">
-            <div class="title">
-              Снимки экрана
-            </div>
-          </div>
-          <div class="button button-next" role="button" aria-label="Next">
-            <i class="icon icon-forward"></i>
-          </div>
-        </div>
-      </a>
-  
-  </div>
-</nav>
-
-
-
-
-
 			</footer>
 		</div>
 	</article>
@@ -368,6 +445,38 @@
       }
     </script>
 
+    
+      <script>
+        (function(i,s,o,g,r,a,m){
+          i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||
+          []).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;
+          m.parentNode.insertBefore(a,m)
+        })(window, document,
+          'script', '//www.google-analytics.com/analytics.js', 'ga');
+         
+        ga('create', 'UA-54274841-8', 'auto');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+         
+        var buttons = document.querySelectorAll('a');
+        Array.prototype.map.call(buttons, function(item) {
+          if (item.host != document.location.host) {
+            item.addEventListener('click', function() {
+              var action = item.getAttribute('data-action') || 'follow';
+              ga('send', 'event', 'outbound', action, item.href);
+            });
+          }
+        });
+         
+        var query = document.querySelector('.query');
+        query.addEventListener('blur', function() {
+          if (this.value) {
+            var path = document.location.pathname;
+            ga('send', 'pageview', path + '?q=' + this.value);
+          }
+        });
+      </script>
     
 
     <script src="//gohugo.io/js/highlight.pack.js"></script>

@@ -36,6 +36,18 @@
 
 &lt;p&gt;hledger balance ^assets ^liab &amp;ndash;depth 2 -M -H:
 &lt;img src=&#34;https://ledger-ru.github.io/hledgerbalM.png&#34; alt=&#34;hledger balance ^assets ^liab --depth 2 -M -H&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;hledger-balance&#34;&gt;hledger balance&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://ledger-ru.github.io/hledgerbal2.png&#34; alt=&#34;hledger bal&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;hledger-console-ui&#34;&gt;hledger console ui&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://ledger-ru.github.io/hledgercons.png&#34; alt=&#34;hledger console ui&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;hledger-web-ui&#34;&gt;hledger web ui&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://ledger-ru.github.io/hledgerweb.png&#34; alt=&#34;hledger web ui&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

@@ -17,31 +17,31 @@
       <guid>https://ledger-ru.github.io/cheatsheet/</guid>
       <description>
 
-&lt;h2 id=&#34;ledger-cli&#34;&gt;Ledger cli&lt;/h2&gt;
+&lt;h1 id=&#34;ledger-cli&#34;&gt;Ledger cli&lt;/h1&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://ricostacruz.com/cheatsheets/ledger.html&#34;&gt;источник&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Баланс:&lt;/p&gt;
+&lt;h2 id=&#34;баланс&#34;&gt;Баланс&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;$ ledger bal
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Список транзакций:&lt;/p&gt;
+&lt;h2 id=&#34;список-транзакций&#34;&gt;Список транзакций&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;$ ledger reg
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Список транзакций с фильтром:&lt;/p&gt;
+&lt;h2 id=&#34;список-транзакций-с-фильтром&#34;&gt;Список транзакций с фильтром&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;$ ledger reg Продукты # покажет только операции по расходам на продукты
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Баланс с фильтром:&lt;/p&gt;
+&lt;h2 id=&#34;баланс-с-фильтром&#34;&gt;Баланс с фильтром&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;$ ledger bal Расходы  # проверка, не ошибся ли я при вводе данных
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Параметры cli:&lt;/p&gt;
+&lt;p&gt;Параметры cli&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;  -b 01/01   # --начало периода
   -e 01/31   # --конец периода
@@ -49,7 +49,7 @@
   -S amount
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;примеры&#34;&gt;Примеры&lt;/h2&gt;
+&lt;h1 id=&#34;примеры&#34;&gt;Примеры&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code&gt;# расхождения
   ledger bal Аренда Транспорт  		# только по этим статьям
@@ -72,7 +72,7 @@
 
 &lt;h2 id=&#34;формат&#34;&gt;Формат&lt;/h2&gt;
 
-&lt;p&gt;Типовая транзакция:&lt;/p&gt;
+&lt;p&gt;Типовая транзакция&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;2013/01/03 * Аренда в январе
   Расходы:Аренда   600 руб
@@ -82,12 +82,12 @@
 ! = не подтверждена
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Двойная дата:&lt;/p&gt;
+&lt;p&gt;Двойная дата&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;2008/01/01=2008/01/14 Client invoice  ;  крайняя дата платежа
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Выравнивание баланса:&lt;/p&gt;
+&lt;h2 id=&#34;выравнивание-баланса&#34;&gt;Выравнивание баланса&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;2008/01/01 * Баланс наличности
   Активы:Наличные   = $500
@@ -98,7 +98,7 @@
   Активы:Наличные   = $500 ; выясним, что нужно сделать, чтобы баланс стал $500
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Товары с ценой&lt;/p&gt;
+&lt;h2 id=&#34;товары-с-ценой&#34;&gt;Товары с ценой&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;; цена за штуку
 2010/05/31 * Рынок
@@ -116,7 +116,7 @@
   Активы:Наличные
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Установка своей валюты:&lt;/p&gt;
+&lt;p&gt;Определение своей валюты&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;commodity $
          note Американский доллар
@@ -125,7 +125,7 @@
          default
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Бюджетирование - месячное и годовое:&lt;/p&gt;
+&lt;h2 id=&#34;бюджетирование-месячное-и-годовое&#34;&gt;Бюджетирование - месячное и годовое&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;~ Monthly
   Расходы:Аренда  $500
@@ -139,7 +139,7 @@
 ; ledger bal --unbudgeted Расходы
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Комментарии:&lt;/p&gt;
+&lt;h2 id=&#34;комментарии&#34;&gt;Комментарии&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;; строчный комментарий
 # и это строчный комментарий
@@ -148,19 +148,19 @@
 * и это тоже строчный комментарий
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Периоды:&lt;/p&gt;
+&lt;h2 id=&#34;периоды&#34;&gt;Периоды&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;[interval] [begin] [end]
 
-interval:
+interval
   every day|week|month|quarter|year
   every N days|weeks|...
   daily|weekly|...
-begin:
+begin
   from &amp;lt;spec&amp;gt;
-end:
+end
   to &amp;lt;spec&amp;gt;
-spec:
+spec
   2004
   2004/10/1
 
@@ -169,7 +169,7 @@ $ ledger bal|reg --period &amp;quot;last oct&amp;quot;
 $ ledger bal|reg --period &amp;quot;every week&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;команда Register:&lt;/p&gt;
+&lt;h2 id=&#34;команда-register&#34;&gt;команда Register&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;$ ledger reg
   -D, --daily
@@ -184,7 +184,7 @@ $ ledger bal|reg --period &amp;quot;every week&amp;quot;
   -S, --sort amount
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Фильтры:&lt;/p&gt;
+&lt;h2 id=&#34;фильтры&#34;&gt;Фильтры&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;    -b, --begin DATE
     -e, --end DATE
@@ -202,7 +202,7 @@ $ ledger bal|reg --period &amp;quot;every week&amp;quot;
                     # &amp;quot;reg -r Накопления&amp;quot; покажет откуда они взялись
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Запросы:&lt;/p&gt;
+&lt;h2 id=&#34;запросы&#34;&gt;Запросы&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;^regex$ 
 @payee
@@ -215,13 +215,13 @@ not term
 \( term \)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Пример:&lt;/p&gt;
+&lt;p&gt;Пример&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;ledger r ^Расходы and @Сын
 ledger r Еда and @Старбакс and not Обед
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Отображение:&lt;/p&gt;
+&lt;p&gt;Отображение&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;-n, --collapse       # [register] свернуть записи
                      # [balance] без общих итогов
@@ -230,9 +230,9 @@ ledger r Еда and @Старбакс and not Обед
 --flat
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;примеры-1&#34;&gt;Примеры&lt;/h2&gt;
+&lt;h1 id=&#34;примеры-1&#34;&gt;Примеры&lt;/h1&gt;
 
-&lt;p&gt;Проверка транзакций:&lt;/p&gt;
+&lt;p&gt;Проверка транзакций&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;# вывести расходы за октябрь (--period)
   ledger r Расходы -p oct
@@ -251,7 +251,7 @@ ledger r Еда and @Старбакс and not Обед
   ledger r mastercard -b 01/25 -e 01/31
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Вывод отчетов:&lt;/p&gt;
+&lt;h2 id=&#34;вывод-отчетов&#34;&gt;Вывод отчетов&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;# вывести ежемесячный баланс банковского счета
   ledger r Накопления -M
@@ -263,7 +263,7 @@ ledger r Еда and @Старбакс and not Обед
   ledger r Расходы -M -n --average
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Еще проще:&lt;/p&gt;
+&lt;p&gt;Еще проще&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;# что я вчера делал?
 # ..список вчерашних транзакций
@@ -271,7 +271,7 @@ ledger r Еда and @Старбакс and not Обед
   ledger r -p yesterday
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Конвертации:&lt;/p&gt;
+&lt;p&gt;Конвертации&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;# а что если все представить в USD? (--exchange)
   ledger b Активы -X USD
@@ -282,36 +282,34 @@ ledger r Еда and @Старбакс and not Обед
 &lt;pre&gt;&lt;code&gt;$ ledger csv
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Пример вывода:&lt;/p&gt;
+&lt;p&gt;Пример вывода&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;date         , ?  , desc     , account            , currency , amt     , pending/cleared , ?
-&amp;quot;2013/09/02&amp;quot; , &amp;quot;&amp;quot; , &amp;quot;шмотки&amp;quot; , &amp;quot;Активы:Наличные&amp;quot;      , &amp;quot;P&amp;quot;      , &amp;quot;-2000&amp;quot; , &amp;quot;*&amp;quot;             , &amp;quot;&amp;quot;
+&lt;pre&gt;&lt;code&gt;date         , ?  , desc     , account                  , currency , amt     , pending/cleared , ?
+&amp;quot;2013/09/02&amp;quot; , &amp;quot;&amp;quot; , &amp;quot;шмотки&amp;quot; , &amp;quot;Активы:Наличные&amp;quot;        , &amp;quot;P&amp;quot;      , &amp;quot;-2000&amp;quot; , &amp;quot;*&amp;quot;             , &amp;quot;&amp;quot;
 &amp;quot;2013/09/02&amp;quot; , &amp;quot;&amp;quot; , &amp;quot;шмотки&amp;quot; , &amp;quot;Обязательства:Кредитка&amp;quot; , &amp;quot;P&amp;quot;      , &amp;quot;-200&amp;quot;  , &amp;quot;*&amp;quot;             , &amp;quot;&amp;quot;
-&amp;quot;2013/09/02&amp;quot; , &amp;quot;&amp;quot; , &amp;quot;шмотки&amp;quot; , &amp;quot;Расходы:Шмотки&amp;quot;  , &amp;quot;P&amp;quot;      , &amp;quot;2200&amp;quot;  , &amp;quot;*&amp;quot;             , &amp;quot;&amp;quot;
-&amp;quot;2013/09/04&amp;quot; , &amp;quot;&amp;quot; , &amp;quot;прочее&amp;quot;  , &amp;quot;Активы:Наличные&amp;quot;      , &amp;quot;P&amp;quot;      , &amp;quot;-20&amp;quot;   , &amp;quot;*&amp;quot;             , &amp;quot;&amp;quot;
-&amp;quot;2013/09/04&amp;quot; , &amp;quot;&amp;quot; , &amp;quot;прочее&amp;quot;  , &amp;quot;Расходы:Прочие&amp;quot;  , &amp;quot;P&amp;quot;      , &amp;quot;20&amp;quot;    , &amp;quot;*&amp;quot;             , &amp;quot;&amp;quot;
+&amp;quot;2013/09/02&amp;quot; , &amp;quot;&amp;quot; , &amp;quot;шмотки&amp;quot; , &amp;quot;Расходы:Шмотки&amp;quot;         , &amp;quot;P&amp;quot;      , &amp;quot;2200&amp;quot;  , &amp;quot;*&amp;quot;             , &amp;quot;&amp;quot;
+&amp;quot;2013/09/04&amp;quot; , &amp;quot;&amp;quot; , &amp;quot;прочее&amp;quot;  , &amp;quot;Активы:Наличные&amp;quot;       , &amp;quot;P&amp;quot;      , &amp;quot;-20&amp;quot;   , &amp;quot;*&amp;quot;             , &amp;quot;&amp;quot;
+&amp;quot;2013/09/04&amp;quot; , &amp;quot;&amp;quot; , &amp;quot;прочее&amp;quot;  , &amp;quot;Расходы:Прочие&amp;quot;        , &amp;quot;P&amp;quot;      , &amp;quot;20&amp;quot;    , &amp;quot;*&amp;quot;             , &amp;quot;&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;формат-ledger&#34;&gt;Формат ledger&lt;/h2&gt;
 
-&lt;p&gt;Первая строка:&lt;/p&gt;
+&lt;p&gt;Первая строка&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;2015/01/01 *       Аренда       ; тэг:
+&lt;pre&gt;&lt;code&gt;2015/01/01 *       Аренда       ; тэг
 ^          ^       ^
 Дата       Флаг    Описание     ^ комментарий/тэг
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Алиасы (псевдонимы)&lt;/p&gt;
+&lt;h2 id=&#34;алиасы-псевдонимы&#34;&gt;Алиасы (псевдонимы)&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;alias Налик = Активы:Наличные
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Указание года по-умолчанию:&lt;/p&gt;
+&lt;p&gt;Указание года по-умолчанию&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;Y2015           ; год по-умолчанию (когда вы введете 01/25, год будет высчитан из умолчания)
+&lt;pre&gt;&lt;code&gt;Y2015 ; год по-умолчанию (когда вы введете 01/25, год будет высчитан из умолчания)
 &lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

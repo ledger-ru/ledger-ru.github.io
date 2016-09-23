@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Installs on Личные финансы для гиков</title>
+    <link>https://ledger-ru.github.io/install/</link>
+    <description>Recent content in Installs on Личные финансы для гиков</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <lastBuildDate>Fri, 23 Sep 2016 18:14:40 +0300</lastBuildDate>
+    <atom:link href="https://ledger-ru.github.io/install/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Установка</title>
+      <link>https://ledger-ru.github.io/install/</link>
+      <pubDate>Fri, 23 Sep 2016 18:14:40 +0300</pubDate>
+      
+      <guid>https://ledger-ru.github.io/install/</guid>
+      <description>
+
+&lt;h2 id=&#34;скачать&#34;&gt;Скачать&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://ledger-cli.org/download.html&#34;&gt;Скачать ledger с офф. сайта для Linux, Windows, Mac OS, BSD&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://hledger.org/download.html&#34;&gt;Скачать hledger с офф. сайта для Linux, Windows, Mac OS&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://furius.ca/beancount/#download-installation&#34;&gt;Скачать beancount с офф. сайта для Linux, Windows, Mac OS&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;установка&#34;&gt;Установка&lt;/h2&gt;
+
+&lt;p&gt;Установка утилит описана на своих сайтах, но в целом она заключается лишь в загрузке утилиты. Всё остальное вы делаете сами, создавая и заполняя файл журнала.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

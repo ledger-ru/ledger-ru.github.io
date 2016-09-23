@@ -9,6 +9,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <meta name="google-site-verification" content="BRLJtg-Dz8fP9vutxOptMH3zMLYUI4XtK-mys0qoEIw" />
     <title>Шпаргалка - Личные финансы для гиков</title>
     <meta name="generator" content="Hugo 0.16" />
 
@@ -185,6 +186,23 @@
 
 
 
+<a  title="Установка" href="https://ledger-ru.github.io/install/">
+	
+	Установка
+</a>
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
 <a  title="Учебник" href="https://ledger-ru.github.io/tutorial/">
 	
 	Учебник
@@ -247,31 +265,31 @@
 
 			
 
-<h2 id="ledger-cli">Ledger cli</h2>
+<h1 id="ledger-cli">Ledger cli</h1>
 
 <p><a href="http://ricostacruz.com/cheatsheets/ledger.html">источник</a></p>
 
-<p>Баланс:</p>
+<h2 id="баланс">Баланс</h2>
 
 <pre><code>$ ledger bal
 </code></pre>
 
-<p>Список транзакций:</p>
+<h2 id="список-транзакций">Список транзакций</h2>
 
 <pre><code>$ ledger reg
 </code></pre>
 
-<p>Список транзакций с фильтром:</p>
+<h2 id="список-транзакций-с-фильтром">Список транзакций с фильтром</h2>
 
 <pre><code>$ ledger reg Продукты # покажет только операции по расходам на продукты
 </code></pre>
 
-<p>Баланс с фильтром:</p>
+<h2 id="баланс-с-фильтром">Баланс с фильтром</h2>
 
 <pre><code>$ ledger bal Расходы  # проверка, не ошибся ли я при вводе данных
 </code></pre>
 
-<p>Параметры cli:</p>
+<p>Параметры cli</p>
 
 <pre><code>  -b 01/01   # --начало периода
   -e 01/31   # --конец периода
@@ -279,7 +297,7 @@
   -S amount
 </code></pre>
 
-<h2 id="примеры">Примеры</h2>
+<h1 id="примеры">Примеры</h1>
 
 <pre><code># расхождения
   ledger bal Аренда Транспорт  		# только по этим статьям
@@ -302,7 +320,7 @@
 
 <h2 id="формат">Формат</h2>
 
-<p>Типовая транзакция:</p>
+<p>Типовая транзакция</p>
 
 <pre><code>2013/01/03 * Аренда в январе
   Расходы:Аренда   600 руб
@@ -312,12 +330,12 @@
 ! = не подтверждена
 </code></pre>
 
-<p>Двойная дата:</p>
+<p>Двойная дата</p>
 
 <pre><code>2008/01/01=2008/01/14 Client invoice  ;  крайняя дата платежа
 </code></pre>
 
-<p>Выравнивание баланса:</p>
+<h2 id="выравнивание-баланса">Выравнивание баланса</h2>
 
 <pre><code>2008/01/01 * Баланс наличности
   Активы:Наличные   = $500
@@ -328,7 +346,7 @@
   Активы:Наличные   = $500 ; выясним, что нужно сделать, чтобы баланс стал $500
 </code></pre>
 
-<p>Товары с ценой</p>
+<h2 id="товары-с-ценой">Товары с ценой</h2>
 
 <pre><code>; цена за штуку
 2010/05/31 * Рынок
@@ -346,7 +364,7 @@
   Активы:Наличные
 </code></pre>
 
-<p>Установка своей валюты:</p>
+<p>Определение своей валюты</p>
 
 <pre><code>commodity $
          note Американский доллар
@@ -355,7 +373,7 @@
          default
 </code></pre>
 
-<p>Бюджетирование - месячное и годовое:</p>
+<h2 id="бюджетирование-месячное-и-годовое">Бюджетирование - месячное и годовое</h2>
 
 <pre><code>~ Monthly
   Расходы:Аренда  $500
@@ -369,7 +387,7 @@
 ; ledger bal --unbudgeted Расходы
 </code></pre>
 
-<p>Комментарии:</p>
+<h2 id="комментарии">Комментарии</h2>
 
 <pre><code>; строчный комментарий
 # и это строчный комментарий
@@ -378,19 +396,19 @@
 * и это тоже строчный комментарий
 </code></pre>
 
-<p>Периоды:</p>
+<h2 id="периоды">Периоды</h2>
 
 <pre><code>[interval] [begin] [end]
 
-interval:
+interval
   every day|week|month|quarter|year
   every N days|weeks|...
   daily|weekly|...
-begin:
+begin
   from &lt;spec&gt;
-end:
+end
   to &lt;spec&gt;
-spec:
+spec
   2004
   2004/10/1
 
@@ -399,7 +417,7 @@ $ ledger bal|reg --period &quot;last oct&quot;
 $ ledger bal|reg --period &quot;every week&quot;
 </code></pre>
 
-<p>команда Register:</p>
+<h2 id="команда-register">команда Register</h2>
 
 <pre><code>$ ledger reg
   -D, --daily
@@ -414,7 +432,7 @@ $ ledger bal|reg --period &quot;every week&quot;
   -S, --sort amount
 </code></pre>
 
-<p>Фильтры:</p>
+<h2 id="фильтры">Фильтры</h2>
 
 <pre><code>    -b, --begin DATE
     -e, --end DATE
@@ -432,7 +450,7 @@ $ ledger bal|reg --period &quot;every week&quot;
                     # &quot;reg -r Накопления&quot; покажет откуда они взялись
 </code></pre>
 
-<p>Запросы:</p>
+<h2 id="запросы">Запросы</h2>
 
 <pre><code>^regex$ 
 @payee
@@ -445,13 +463,13 @@ not term
 \( term \)
 </code></pre>
 
-<p>Пример:</p>
+<p>Пример</p>
 
 <pre><code>ledger r ^Расходы and @Сын
 ledger r Еда and @Старбакс and not Обед
 </code></pre>
 
-<p>Отображение:</p>
+<p>Отображение</p>
 
 <pre><code>-n, --collapse       # [register] свернуть записи
                      # [balance] без общих итогов
@@ -460,9 +478,9 @@ ledger r Еда and @Старбакс and not Обед
 --flat
 </code></pre>
 
-<h2 id="примеры-1">Примеры</h2>
+<h1 id="примеры-1">Примеры</h1>
 
-<p>Проверка транзакций:</p>
+<p>Проверка транзакций</p>
 
 <pre><code># вывести расходы за октябрь (--period)
   ledger r Расходы -p oct
@@ -481,7 +499,7 @@ ledger r Еда and @Старбакс and not Обед
   ledger r mastercard -b 01/25 -e 01/31
 </code></pre>
 
-<p>Вывод отчетов:</p>
+<h2 id="вывод-отчетов">Вывод отчетов</h2>
 
 <pre><code># вывести ежемесячный баланс банковского счета
   ledger r Накопления -M
@@ -493,7 +511,7 @@ ledger r Еда and @Старбакс and not Обед
   ledger r Расходы -M -n --average
 </code></pre>
 
-<p>Еще проще:</p>
+<p>Еще проще</p>
 
 <pre><code># что я вчера делал?
 # ..список вчерашних транзакций
@@ -501,7 +519,7 @@ ledger r Еда and @Старбакс and not Обед
   ledger r -p yesterday
 </code></pre>
 
-<p>Конвертации:</p>
+<p>Конвертации</p>
 
 <pre><code># а что если все представить в USD? (--exchange)
   ledger b Активы -X USD
@@ -512,36 +530,34 @@ ledger r Еда and @Старбакс and not Обед
 <pre><code>$ ledger csv
 </code></pre>
 
-<p>Пример вывода:</p>
+<p>Пример вывода</p>
 
-<pre><code>date         , ?  , desc     , account            , currency , amt     , pending/cleared , ?
-&quot;2013/09/02&quot; , &quot;&quot; , &quot;шмотки&quot; , &quot;Активы:Наличные&quot;      , &quot;P&quot;      , &quot;-2000&quot; , &quot;*&quot;             , &quot;&quot;
+<pre><code>date         , ?  , desc     , account                  , currency , amt     , pending/cleared , ?
+&quot;2013/09/02&quot; , &quot;&quot; , &quot;шмотки&quot; , &quot;Активы:Наличные&quot;        , &quot;P&quot;      , &quot;-2000&quot; , &quot;*&quot;             , &quot;&quot;
 &quot;2013/09/02&quot; , &quot;&quot; , &quot;шмотки&quot; , &quot;Обязательства:Кредитка&quot; , &quot;P&quot;      , &quot;-200&quot;  , &quot;*&quot;             , &quot;&quot;
-&quot;2013/09/02&quot; , &quot;&quot; , &quot;шмотки&quot; , &quot;Расходы:Шмотки&quot;  , &quot;P&quot;      , &quot;2200&quot;  , &quot;*&quot;             , &quot;&quot;
-&quot;2013/09/04&quot; , &quot;&quot; , &quot;прочее&quot;  , &quot;Активы:Наличные&quot;      , &quot;P&quot;      , &quot;-20&quot;   , &quot;*&quot;             , &quot;&quot;
-&quot;2013/09/04&quot; , &quot;&quot; , &quot;прочее&quot;  , &quot;Расходы:Прочие&quot;  , &quot;P&quot;      , &quot;20&quot;    , &quot;*&quot;             , &quot;&quot;
+&quot;2013/09/02&quot; , &quot;&quot; , &quot;шмотки&quot; , &quot;Расходы:Шмотки&quot;         , &quot;P&quot;      , &quot;2200&quot;  , &quot;*&quot;             , &quot;&quot;
+&quot;2013/09/04&quot; , &quot;&quot; , &quot;прочее&quot;  , &quot;Активы:Наличные&quot;       , &quot;P&quot;      , &quot;-20&quot;   , &quot;*&quot;             , &quot;&quot;
+&quot;2013/09/04&quot; , &quot;&quot; , &quot;прочее&quot;  , &quot;Расходы:Прочие&quot;        , &quot;P&quot;      , &quot;20&quot;    , &quot;*&quot;             , &quot;&quot;
 </code></pre>
 
 <h2 id="формат-ledger">Формат ledger</h2>
 
-<p>Первая строка:</p>
+<p>Первая строка</p>
 
-<pre><code>2015/01/01 *       Аренда       ; тэг:
+<pre><code>2015/01/01 *       Аренда       ; тэг
 ^          ^       ^
 Дата       Флаг    Описание     ^ комментарий/тэг
 </code></pre>
 
-<p>Алиасы (псевдонимы)</p>
+<h2 id="алиасы-псевдонимы">Алиасы (псевдонимы)</h2>
 
 <pre><code>alias Налик = Активы:Наличные
 </code></pre>
 
-<p>Указание года по-умолчанию:</p>
+<p>Указание года по-умолчанию</p>
 
-<pre><code>Y2015           ; год по-умолчанию (когда вы введете 01/25, год будет высчитан из умолчания)
+<pre><code>Y2015 ; год по-умолчанию (когда вы введете 01/25, год будет высчитан из умолчания)
 </code></pre>
-
-<pre><code></code></pre>
 
 
 			<aside class="copyright" role="note">
@@ -556,37 +572,6 @@ ledger r Еда and @Старбакс and not Обед
 
 			<footer class="footer">
 				
-
-<nav class="pagination" aria-label="Footer">
-  <div class="previous">
-  
-  </div>
-
-  <div class="next">
-  
-      <a href="https://ledger-ru.github.io/tutorial/" title="index">
-        <span class="direction">
-          Next
-        </span>
-        <div class="page">
-          <div class="stretch">
-            <div class="title">
-              index
-            </div>
-          </div>
-          <div class="button button-next" role="button" aria-label="Next">
-            <i class="icon icon-forward"></i>
-          </div>
-        </div>
-      </a>
-  
-  </div>
-</nav>
-
-
-
-
-
 			</footer>
 		</div>
 	</article>
@@ -649,6 +634,38 @@ ledger r Еда and @Старбакс and not Обед
       }
     </script>
 
+    
+      <script>
+        (function(i,s,o,g,r,a,m){
+          i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||
+          []).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;
+          m.parentNode.insertBefore(a,m)
+        })(window, document,
+          'script', '//www.google-analytics.com/analytics.js', 'ga');
+         
+        ga('create', 'UA-54274841-8', 'auto');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+         
+        var buttons = document.querySelectorAll('a');
+        Array.prototype.map.call(buttons, function(item) {
+          if (item.host != document.location.host) {
+            item.addEventListener('click', function() {
+              var action = item.getAttribute('data-action') || 'follow';
+              ga('send', 'event', 'outbound', action, item.href);
+            });
+          }
+        });
+         
+        var query = document.querySelector('.query');
+        query.addEventListener('blur', function() {
+          if (this.value) {
+            var path = document.location.pathname;
+            ga('send', 'pageview', path + '?q=' + this.value);
+          }
+        });
+      </script>
     
 
     <script src="//gohugo.io/js/highlight.pack.js"></script>

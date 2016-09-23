@@ -10,12 +10,118 @@
     <atom:link href="https://ledger-ru.github.io/tutorial/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>index</title>
+      <title>Учебник Ledger</title>
       <link>https://ledger-ru.github.io/tutorial/</link>
       <pubDate>Fri, 23 Sep 2016 14:56:11 +0300</pubDate>
       
       <guid>https://ledger-ru.github.io/tutorial/</guid>
-      <description></description>
+      <description>
+
+&lt;p&gt;Основные моменты учета в ledger (на русском) описаны в статьях &lt;a href=&#34;http://softdroid.net/planirovanie-finansov-ledger&#34;&gt;Планирование финансов через командную стоку в ledger&lt;/a&gt; и &lt;a href=&#34;https://bronevichok.ru/blog/2014/09/27/personal-finances-with-ledger-1.html&#34;&gt;Финансовый учёт с ledger&lt;/a&gt;. Для общего развития рекомендую ознакомиться с ними.&lt;/p&gt;
+
+&lt;h2 id=&#34;немного-теории&#34;&gt;Немного теории&lt;/h2&gt;
+
+&lt;p&gt;Счетом мы называем любой вид Дохода/Расхода, а также любое &amp;ldquo;место&amp;rdquo;, откуда/куда приходят деньги. Кто-то называет их категориями, но суть от этого не меняется.&lt;/p&gt;
+
+&lt;p&gt;Обычно заводят такие счета как &amp;ldquo;Продукты&amp;rdquo;, &amp;ldquo;Авто&amp;rdquo;, &amp;ldquo;Подарки&amp;rdquo;, &amp;ldquo;Зарплата&amp;rdquo;, &amp;ldquo;Наличные&amp;rdquo;, &amp;ldquo;Ипотека&amp;rdquo; и т.п.&lt;/p&gt;
+
+&lt;p&gt;В системе двойной записи деньги переходят с одного счета на другой. И при этом отображаются в обоих строках транзакции с разными знаками.
+К примеру, покупка книги за 500 рублей переводит деньги со счета &amp;ldquo;Наличные&amp;rdquo; на счет &amp;ldquo;Книги&amp;rdquo;. Получение зарплаты отражается как перевод денег со счета &amp;ldquo;Зарплата&amp;rdquo; на счет &amp;ldquo;Наличные&amp;rdquo; (ну или &amp;ldquo;Банковская карта&amp;rdquo;). Главное - помнить, что при перемещении денег в итоге должен быть обязательно ноль, иначе баланса не будет.&lt;/p&gt;
+
+&lt;p&gt;Итак, мы выяснили, что счета могут быть самые разные, но многие пользователи добавляют такие счета верхнего уровня:&lt;/p&gt;
+
+&lt;p&gt;• Расход&lt;br /&gt;
+• Доход&lt;br /&gt;
+• Активы&lt;br /&gt;
+• Обязательства&lt;/p&gt;
+
+&lt;h2 id=&#34;создайте-файл-журнала&#34;&gt;Создайте файл журнала&lt;/h2&gt;
+
+&lt;p&gt;В *nix-подобных вы можете создать пустой файл командой&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;touch tutorial.dat
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;В Windows просто создайте пустой файл в блокноте и сохраните файл под нужным именем, например &amp;ldquo;tutorial.dat&amp;rdquo;. Но тут есть один нюанс: т.к. ledger собран под cygwin, он требует указания имени файла с необычным путем, например, так: &amp;ldquo;/cygdrive/e/tutorial.dat&amp;rdquo; (для диска E:\)&lt;/p&gt;
+
+&lt;p&gt;В дальнейшем запускать ledger так: &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ledger -f &amp;quot;tutorial.dat&amp;quot; &amp;lt;команда&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;или так под Windows:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ledger.exe -f &amp;quot;/cygdrive/e/tutorial.dat&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;файл-для-примера&#34;&gt;Файл для примера&lt;/h2&gt;
+
+&lt;p&gt;Я создал файл, на котором мы будем тренироваться. Скачайте его и попробуйте поработать с ним для начала:
+&lt;a href=&#34;https://gist.github.com/fokusov/d226054c126566a2d4234683407c718d&#34;&gt;tutorial.dat&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Предположим, вы создали файл. Запустим основной отчет - баланс:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ledger.exe -f &amp;quot;/cygdrive/e/tutorial.dat&amp;quot; balance
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Мы должны получить следующую картину:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://ledger-ru.github.io/tutorial1.png&#34; alt=&#34;tutorial1&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Здесь мы видим, что у нас есть 1000 руб наличными и долг Василию в 1000 руб, введенные начальными остатками. Остатки введены специально для того, чтобы показать, как начать вести журнал не с чистого листа, а переносом остатков.&lt;/p&gt;
+
+&lt;p&gt;Попробуйте запустить отчет с фильтром:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ledger.exe -f &amp;quot;/cygdrive/e/tutorial.dat&amp;quot; balance Наличные
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;так мы увидим только транзакции с наличными. Фильтры будут рассматриваться еще не раз в дальнейшем.&lt;/p&gt;
+
+&lt;h2 id=&#34;создание-транзакций&#34;&gt;Создание транзакций&lt;/h2&gt;
+
+&lt;p&gt;Откройте файл любимым редактором (я рекомендую Vim/Emacs или SublimeText3 с плагином подсветки/дополнения) и добавьте следующую операцию:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;2016/09/01 * Зарплата
+	Кошелек:Наличные		10000 руб
+	Доходы:Зарплата
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Вкратце поясню что мы написали, но рекомендую ознакомиться с &lt;a href=&#34;https://ledger-ru.github.io/cheatsheet/#формат-ledger&#34;&gt;форматом записи ledger&lt;/a&gt;. У нас описана операция получения зарплаты в размере 10000 руб от 1 сентября. В ней мы зачисляем 10000 руб на счет &amp;ldquo;Кошелек:Наличные&amp;rdquo; со счета &amp;ldquo;Доходы:Зарплата&amp;rdquo;. Вы можете указать сумму с минусом напротив счета &amp;ldquo;Доходы:Зарплата&amp;rdquo;, но это не обязательно и важно только в транзакциях с тремя и больше строками. Ledger сам автоматически понимает, что с другой стороны проводки нужная нам сумма. Запустите отчет баланса:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;E:\soft\ledger\ledger.exe -f &amp;quot;/cygdrive/e/tutorial.dat&amp;quot; balance
+           -1000 руб  Долги:Василий
+          -10000 руб  Доходы:Зарплата
+           11000 руб  Кошелек:Наличные
+--------------------
+                   0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ноль под чертой очень важен и показывает, что у нас все транзакции записаны правильно с точки зрения двойной записи. А остаток в кошельке у нас 11 000 руб.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Теперь вы видите насколько просто вести учет денег с ledger?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Вы спросите, почему Доходы показаны с минусом? Если кратко, то в двойной записи деньги (как и любая другая ценность) должны откуда-то переместиться куда-то. В нашем примере они пришли со статьи дохода на статью расхода. Поэтому на счете поступления показан плюсовой остаток, ну а на другом счете - отрицательный. Или другими словами, на счете дохода их стало меньше, чем в нашем кошельке :)&lt;/p&gt;
+
+&lt;p&gt;Введем еще одну операцию:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;2016/09/05 * Бензин
+	Кошелек:Наличные
+	Расходы:Авто		1000 руб
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Чаще всего нужен ответ на вопрос &amp;ldquo;Сколько я трачу в месяц на &amp;hellip;?&amp;rdquo; Увидеть это можно так:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;E:\soft\ledger\ledger.exe -f &amp;quot;/cygdrive/e/tutorial.dat&amp;quot; -M register Расходы:Авто
+
+16-Sep-01 - 16-Sep-30              Расходы:Авто                       1000 руб       1000 руб
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;активы-и-обязательства&#34;&gt;Активы и обязательства&lt;/h2&gt;
+
+&lt;p&gt;Актив это то, чем вы владеете. Обязательства это то, что вы заняли у кого-то или, другими словами, долги.&lt;/p&gt;
+
+&lt;p&gt;Например, счет &amp;ldquo;Кошелек:Наличные&amp;rdquo; - это актив. Обязательства это, например, кредитка или банковский кредит.&lt;/p&gt;
+</description>
     </item>
     
   </channel>
