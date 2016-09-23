@@ -360,13 +360,13 @@
 - &lt;a href=&#34;#&#34;&gt;в процессе&amp;hellip;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;на англ.:&lt;br /&gt;
-- &lt;a href=&#34;http://plaintextaccounting.org/quickref/&#34;&gt;Краткий обзор Ledger-подобных утилит&lt;/a&gt;
-- &lt;a href=&#34;http://www.matthiaskauer.com/2015/08/command-line-accounting-a-look-at-the-various-ledger-ports/&#34;&gt;Matthias Kauer: Command Line Accounting – A look at the various ledger ports&lt;/a&gt; 2015
-- &lt;a href=&#34;http://thread.gmane.org/gmane.comp.finance.beancount/227&#34;&gt;Another Ledger user&amp;rsquo;s perspective&lt;/a&gt; on Beancount 2015
-- &lt;a href=&#34;https://docs.google.com/document/d/1dW2vIjaXVJAf9hr7GlZVe3fJOkM-MtlVjvCO1ZpNLmg/edit?pli=1#heading=h.2ax1dztqboy7&#34;&gt;Martin Blais: A Comparison of Beancount and Ledger&lt;/a&gt; 2014
-- &lt;a href=&#34;http://thread.gmane.org/gmane.comp.finance.ledger.general/6563&#34;&gt;ledger vs hledger vs beancount or how to choose the right cli client&lt;/a&gt; 2014
-- &lt;a href=&#34;http://hledger.org/faq.html#hledger-ledger&#34;&gt;Simon Michael: hledger &amp;amp; Ledger&lt;/a&gt; 2014
-- &lt;a href=&#34;http://massysett.github.io/penny/why-penny.html&#34;&gt;Omari Norman: Why Penny&lt;/a&gt; 2013
+- &lt;a href=&#34;http://plaintextaccounting.org/quickref/&#34;&gt;Краткий обзор Ledger-подобных утилит&lt;/a&gt;&lt;br /&gt;
+- &lt;a href=&#34;http://www.matthiaskauer.com/2015/08/command-line-accounting-a-look-at-the-various-ledger-ports/&#34;&gt;Matthias Kauer: Command Line Accounting – A look at the various ledger ports&lt;/a&gt; 2015&lt;br /&gt;
+- &lt;a href=&#34;http://thread.gmane.org/gmane.comp.finance.beancount/227&#34;&gt;Another Ledger user&amp;rsquo;s perspective&lt;/a&gt; on Beancount 2015&lt;br /&gt;
+- &lt;a href=&#34;https://docs.google.com/document/d/1dW2vIjaXVJAf9hr7GlZVe3fJOkM-MtlVjvCO1ZpNLmg/edit?pli=1#heading=h.2ax1dztqboy7&#34;&gt;Martin Blais: A Comparison of Beancount and Ledger&lt;/a&gt; 2014&lt;br /&gt;
+- &lt;a href=&#34;http://thread.gmane.org/gmane.comp.finance.ledger.general/6563&#34;&gt;ledger vs hledger vs beancount or how to choose the right cli client&lt;/a&gt; 2014&lt;br /&gt;
+- &lt;a href=&#34;http://hledger.org/faq.html#hledger-ledger&#34;&gt;Simon Michael: hledger &amp;amp; Ledger&lt;/a&gt; 2014&lt;br /&gt;
+- &lt;a href=&#34;http://massysett.github.io/penny/why-penny.html&#34;&gt;Omari Norman: Why Penny&lt;/a&gt; 2013&lt;br /&gt;
 - &lt;a href=&#34;http://www.mygooglest.com/fni/ledger.html&#34;&gt;Fabrice Niessen: Why Ledger?&lt;/a&gt; 2010&lt;/p&gt;
 
 &lt;h2 id=&#34;книги&#34;&gt;книги&lt;/h2&gt;
@@ -380,8 +380,8 @@
 &lt;h2 id=&#34;презентации&#34;&gt;презентации&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.loadingdata.nl/accounting-for-geeks/&#34;&gt;Бухучет для гиков с Ledger CLI (англ.)&lt;/a&gt; 2014&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://matthewturland.com/slides/ledger-stats/&#34;&gt;Hacking Your Finances for Fun and Profit&lt;/a&gt; 2013&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.loadingdata.nl/accounting-for-geeks/&#34;&gt;Бухучет для гиков с Ledger CLI (англ.)&lt;/a&gt; 2014&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://matthewturland.com/slides/ledger-stats/&#34;&gt;Hacking Your Finances for Fun and Profit&lt;/a&gt; 2013&lt;br /&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.adamsinfoserv.com/AISTWiki/pub/AIS/Presentations/Ledger.pdf&#34;&gt;Ledger и бухучет на текстовых файлах (англ.)&lt;/a&gt; 2009&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -391,15 +391,15 @@
 - &lt;a href=&#34;#&#34;&gt;в процессе&amp;hellip;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;на англ.:&lt;br /&gt;
-- &lt;a href=&#34;https://www.youtube.com/watch?v=cjoCNRpLanY&#34;&gt;Покорите финансы с Emacs и Ledger&lt;/a&gt; 2016
+- &lt;a href=&#34;https://www.youtube.com/watch?v=cjoCNRpLanY&#34;&gt;Покорите финансы с Emacs и Ledger&lt;/a&gt; 2016&lt;br /&gt;
 - &lt;a href=&#34;https://twit.tv/shows/floss-weekly/episodes/375&#34;&gt;FLOSS Weekly 375: hledger&lt;/a&gt;
   (&lt;a href=&#34;https://www.youtube.com/watch?v=Xjl-wVJcYpE&#34;&gt;youtube&lt;/a&gt;,
-  &lt;a href=&#34;https://www.youtube.com/watch?v=qS2UcDV_lbs&#34;&gt;3m обзор&lt;/a&gt;) 2016
-- &lt;a href=&#34;https://www.youtube.com/watch?v=MGu1Bw2USQo&#34;&gt;Эволюция ledger&lt;/a&gt; 2015
-- &lt;a href=&#34;https://www.youtube.com/watch?v=dEADGr9dqow&#34;&gt;Эволюция hledger&lt;/a&gt; 2015
+  &lt;a href=&#34;https://www.youtube.com/watch?v=qS2UcDV_lbs&#34;&gt;3m обзор&lt;/a&gt;) 2016&lt;br /&gt;
+- &lt;a href=&#34;https://www.youtube.com/watch?v=MGu1Bw2USQo&#34;&gt;Эволюция ledger&lt;/a&gt; 2015&lt;br /&gt;
+- &lt;a href=&#34;https://www.youtube.com/watch?v=dEADGr9dqow&#34;&gt;Эволюция hledger&lt;/a&gt; 2015&lt;br /&gt;
 - &lt;a href=&#34;https://twit.tv/shows/floss-weekly/episodes/150&#34;&gt;FLOSS Weekly 150: Ledger&lt;/a&gt;
-  (&lt;a href=&#34;https://www.youtube.com/watch?v=TDqrrH-gTt0&#34;&gt;youtube&lt;/a&gt;) 2011
-- &lt;a href=&#34;https://www.youtube.com/playlist?list=PL259DBFA47F3B4761&#34;&gt;Курс бухучета от проф. Krug&lt;/a&gt; 2011
+  (&lt;a href=&#34;https://www.youtube.com/watch?v=TDqrrH-gTt0&#34;&gt;youtube&lt;/a&gt;) 2011&lt;br /&gt;
+- &lt;a href=&#34;https://www.youtube.com/playlist?list=PL259DBFA47F3B4761&#34;&gt;Курс бухучета от проф. Krug&lt;/a&gt; 2011&lt;br /&gt;
 - &lt;a href=&#34;https://www.khanacademy.org/economics-finance-domain/core-finance/accounting-and-financial-stateme&#34;&gt;Khan Academy: бухучет и основы финансов&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;статьи&#34;&gt;статьи&lt;/h2&gt;
@@ -408,31 +408,31 @@
 - &lt;a href=&#34;#&#34;&gt;в процессе&amp;hellip;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;на англ.:&lt;br /&gt;
-- &lt;a href=&#34;https://www.petekeen.net/finance&#34;&gt;Учебники по финансам от Pete Keen&lt;/a&gt; 2012
-- &lt;a href=&#34;http://goykhman.ca/gene/blog/2012/2012-09-23-an-alternative-to-quickbooks.html&#34;&gt;Альтернатива QuickBooks&lt;/a&gt; 2012
-- &lt;a href=&#34;http://lwn.net/Articles/501681/&#34;&gt;Бухгалтерский квест: Ledger&lt;/a&gt; 2012
+- &lt;a href=&#34;https://www.petekeen.net/finance&#34;&gt;Учебники по финансам от Pete Keen&lt;/a&gt; 2012&lt;br /&gt;
+- &lt;a href=&#34;http://goykhman.ca/gene/blog/2012/2012-09-23-an-alternative-to-quickbooks.html&#34;&gt;Альтернатива QuickBooks&lt;/a&gt; 2012&lt;br /&gt;
+- &lt;a href=&#34;http://lwn.net/Articles/501681/&#34;&gt;Бухгалтерский квест: Ledger&lt;/a&gt; 2012&lt;br /&gt;
 - &lt;a href=&#34;http://archive09.linux.com/feature/58307&#34;&gt;Ledger, the bran muffin of accounting tools&lt;/a&gt; 2006&lt;/p&gt;
 
 &lt;h2 id=&#34;блоги&#34;&gt;блоги&lt;/h2&gt;
 
 &lt;p&gt;на русском:&lt;br /&gt;
-- &lt;a href=&#34;http://softdroid.net/planirovanie-finansov-ledger&#34;&gt;Планирование финансов через командную стоку в ledger&lt;/a&gt; 2015
-- &lt;a href=&#34;https://bronevichok.ru/blog/2014/09/27/personal-finances-with-ledger-1.html&#34;&gt;Финансовый учёт с ledger&lt;/a&gt; 2014
-- &lt;a href=&#34;https://habrahabr.ru/post/308434/&#34;&gt;Финансовый учёт в текстовой консоли&lt;/a&gt; 2016
-- &lt;a href=&#34;http://s.arboreus.com/2009/05/personal-accounting-in-command-line.html&#34;&gt;Ledger — бухучёт в командной строке&lt;/a&gt; 2009
+- &lt;a href=&#34;http://softdroid.net/planirovanie-finansov-ledger&#34;&gt;Планирование финансов через командную стоку в ledger&lt;/a&gt; 2015&lt;br /&gt;
+- &lt;a href=&#34;https://bronevichok.ru/blog/2014/09/27/personal-finances-with-ledger-1.html&#34;&gt;Финансовый учёт с ledger&lt;/a&gt; 2014&lt;br /&gt;
+- &lt;a href=&#34;https://habrahabr.ru/post/308434/&#34;&gt;Финансовый учёт в текстовой консоли&lt;/a&gt; 2016&lt;br /&gt;
+- &lt;a href=&#34;http://s.arboreus.com/2009/05/personal-accounting-in-command-line.html&#34;&gt;Ledger — бухучёт в командной строке&lt;/a&gt; 2009&lt;br /&gt;
 - &lt;a href=&#34;https://fluder.co/blog/2013/12/25/ledger-cli-finance-manager/&#34;&gt;Учёт финансов с Ledger CLI&lt;/a&gt; 2013&lt;/p&gt;
 
 &lt;p&gt;на англ.:&lt;br /&gt;
-- &lt;a href=&#34;https://alexjj.com/finance/2016/02/27/managing-personal-finances-with-beancount/&#34;&gt;Управление личными финансами с beancount&lt;/a&gt; 2016
-- &lt;a href=&#34;http://stefanorodighiero.net/posts/2015-01-04-hledger-find-duplicate-accounts.html&#34;&gt;Поиск дублей в журналах Hledger&lt;/a&gt; 2015
-- &lt;a href=&#34;http://matthewturland.com/2014/03/29/ledger-basics-and-habits/&#34;&gt;Matthew Turland: основы и привычки Ledger&lt;/a&gt; 2014
-- &lt;a href=&#34;http://joyful.com/blog/2013-10-20-what-is-hledger.html&#34;&gt;Simon Michael: Что такое hledger ?&lt;/a&gt; 2013
-- &lt;a href=&#34;http://joyful.com/blog/2013-10-19-more-on-ledger.html&#34;&gt;Simon Michael: Больше про ledger&lt;/a&gt; 2013
-- &lt;a href=&#34;http://joyful.com/blog/2013-10-18-introducing-hledger.html&#34;&gt;Simon Michael: Представляем hledger!&lt;/a&gt; 2013
-- &lt;a href=&#34;http://joeyh.name/blog/entry/hledger&#34;&gt;Joey Hess: hledger&lt;/a&gt; 2012
-- &lt;a href=&#34;http://betabug.ch/blogs/ch-athens/1221&#34;&gt;Sascha Welter: Создаю свой бухучет&lt;/a&gt; 2011
-- &lt;a href=&#34;http://www.softwarefreedom.org/blog/2011/sep/07/accounting-at-sflc/&#34;&gt;Clint Adams: Бухучет в SFLC&lt;/a&gt; 2011
-- &lt;a href=&#34;http://blog.spang.cc/posts/hledger_rocks_my_world/&#34;&gt;Christine Spang: [h]ledger завоевал мой мир&lt;/a&gt; 2010
+- &lt;a href=&#34;https://alexjj.com/finance/2016/02/27/managing-personal-finances-with-beancount/&#34;&gt;Управление личными финансами с beancount&lt;/a&gt; 2016&lt;br /&gt;
+- &lt;a href=&#34;http://stefanorodighiero.net/posts/2015-01-04-hledger-find-duplicate-accounts.html&#34;&gt;Поиск дублей в журналах Hledger&lt;/a&gt; 2015&lt;br /&gt;
+- &lt;a href=&#34;http://matthewturland.com/2014/03/29/ledger-basics-and-habits/&#34;&gt;Matthew Turland: основы и привычки Ledger&lt;/a&gt; 2014&lt;br /&gt;
+- &lt;a href=&#34;http://joyful.com/blog/2013-10-20-what-is-hledger.html&#34;&gt;Simon Michael: Что такое hledger ?&lt;/a&gt; 2013&lt;br /&gt;
+- &lt;a href=&#34;http://joyful.com/blog/2013-10-19-more-on-ledger.html&#34;&gt;Simon Michael: Больше про ledger&lt;/a&gt; 2013&lt;br /&gt;
+- &lt;a href=&#34;http://joyful.com/blog/2013-10-18-introducing-hledger.html&#34;&gt;Simon Michael: Представляем hledger!&lt;/a&gt; 2013&lt;br /&gt;
+- &lt;a href=&#34;http://joeyh.name/blog/entry/hledger&#34;&gt;Joey Hess: hledger&lt;/a&gt; 2012&lt;br /&gt;
+- &lt;a href=&#34;http://betabug.ch/blogs/ch-athens/1221&#34;&gt;Sascha Welter: Создаю свой бухучет&lt;/a&gt; 2011&lt;br /&gt;
+- &lt;a href=&#34;http://www.softwarefreedom.org/blog/2011/sep/07/accounting-at-sflc/&#34;&gt;Clint Adams: Бухучет в SFLC&lt;/a&gt; 2011&lt;br /&gt;
+- &lt;a href=&#34;http://blog.spang.cc/posts/hledger_rocks_my_world/&#34;&gt;Christine Spang: [h]ledger завоевал мой мир&lt;/a&gt; 2010&lt;br /&gt;
 - &lt;a href=&#34;http://blog.andrewcantino.com/blog/2013/02/16/command-line-accounting-with-ledger-and-reckon/&#34;&gt;Command Line Accounting With Ledger and Reckon, an Update&lt;/a&gt; 2013&lt;/p&gt;
 
 &lt;h1 id=&#34;общие-задачи&#34;&gt;общие задачи&lt;/h1&gt;
@@ -443,8 +443,8 @@
 - &lt;a href=&#34;#&#34;&gt;в процессе&amp;hellip;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;на англ.:&lt;br /&gt;
-- &lt;a href=&#34;https://gist.github.com/simonmichael/9936299&#34;&gt;Дерево счетов для фрилансера (пример)&lt;/a&gt;
-- &lt;a href=&#34;https://docs.google.com/document/d/1Tss0IEzEyAPuKSGeNsfNgb0BfiW2ZHyP5nCFBW1uWlk/view#heading=h.tu0f1kydrpgn&#34;&gt;Поваренная книга Beancount: Правила именования счетов&lt;/a&gt;
+- &lt;a href=&#34;https://gist.github.com/simonmichael/9936299&#34;&gt;Дерево счетов для фрилансера (пример)&lt;/a&gt;&lt;br /&gt;
+- &lt;a href=&#34;https://docs.google.com/document/d/1Tss0IEzEyAPuKSGeNsfNgb0BfiW2ZHyP5nCFBW1uWlk/view#heading=h.tu0f1kydrpgn&#34;&gt;Поваренная книга Beancount: Правила именования счетов&lt;/a&gt;&lt;br /&gt;
 - &lt;a href=&#34;https://www.mint.com/mint-categories&#34;&gt;Mint: Категоризация расходов&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;ввод-данных&#34;&gt;ввод данных&lt;/h2&gt;
