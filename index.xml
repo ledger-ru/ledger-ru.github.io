@@ -333,34 +333,32 @@ ledger r Еда and @Старбакс and not Обед
 
 &lt;h2 id=&#34;типы-счетов&#34;&gt;Типы счетов&lt;/h2&gt;
 
-&lt;p&gt;Активы          +
-Доходы          -
-Расходы         +
-Обязательства   -
+&lt;p&gt;Активы          +&lt;br /&gt;
+Доходы          -&lt;br /&gt;
+Расходы         +&lt;br /&gt;
+Обязательства   -&lt;br /&gt;
 Капитал         -&lt;/p&gt;
 
 &lt;h2 id=&#34;ценности&#34;&gt;Ценности&lt;/h2&gt;
 
 &lt;p&gt;(Все в ВЕРХНЕМ РЕГИСТРЕ)&lt;/p&gt;
 
-&lt;p&gt;RUR, USD, EUR, CAD,
-GOOG, AAPL, RBF1005
-МИЛИ, ЧАСЫ&lt;/p&gt;
+&lt;p&gt;RUR, USD, EUR, CAD, GOOG, AAPL, RBF1005, МИЛИ, ЧАСЫ&lt;/p&gt;
 
 &lt;h2 id=&#34;формат-дат&#34;&gt;Формат дат&lt;/h2&gt;
 
-&lt;p&gt;YYYY-MM-DD      ГГГГ-ММ-ДД
-YYYY/MM/DD      ГГГГ/ММ/ДД
-YYYY.MM.DD      ГГГГ.ММ.ДД
-MM-DD           ММ-ДД
-MM/DD           ММ/ДД
+&lt;p&gt;YYYY-MM-DD      ГГГГ-ММ-ДД&lt;br /&gt;
+YYYY/MM/DD      ГГГГ/ММ/ДД&lt;br /&gt;
+YYYY.MM.DD      ГГГГ.ММ.ДД&lt;br /&gt;
+MM-DD           ММ-ДД&lt;br /&gt;
+MM/DD           ММ/ДД&lt;br /&gt;
 MM.DD           ММ.ДД&lt;/p&gt;
 
 &lt;h2 id=&#34;цены&#34;&gt;Цены&lt;/h2&gt;
 
 &lt;p&gt;P ДАТА ВРЕМЯ ЦЕННОСТЬ ЦЕНА&lt;/p&gt;
 
-&lt;p&gt;P 2004/06/21 02:18:02 AAPL $32.91
+&lt;p&gt;P 2004/06/21 02:18:02 AAPL $32.91&lt;br /&gt;
 P 2004/06/21 02:18:02 AU $400.00&lt;/p&gt;
 </description>
     </item>
