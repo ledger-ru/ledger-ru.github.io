@@ -327,16 +327,16 @@ ledger r Еда and @Старбакс and not Обед
 
 &lt;h2 id=&#34;формат-дат&#34;&gt;Формат дат&lt;/h2&gt;
 
-&lt;p&gt;YYYY-MM-DD      ГГГГ-ММ-ДД&lt;br /&gt;
-YYYY/MM/DD      ГГГГ/ММ/ДД&lt;br /&gt;
-YYYY.MM.DD      ГГГГ.ММ.ДД&lt;br /&gt;
-MM-DD           ММ-ДД&lt;br /&gt;
-MM/DD           ММ/ДД&lt;br /&gt;
-MM.DD           ММ.ДД&lt;/p&gt;
+&lt;p&gt;YYYY-MM-DD      (ГГГГ-ММ-ДД)&lt;br /&gt;
+YYYY/MM/DD      (ГГГГ/ММ/ДД)&lt;br /&gt;
+YYYY.MM.DD      (ГГГГ.ММ.ДД)&lt;br /&gt;
+MM-DD           (ММ-ДД)&lt;br /&gt;
+MM/DD           (ММ/ДД)&lt;br /&gt;
+MM.DD           (ММ.ДД)&lt;/p&gt;
 
 &lt;h2 id=&#34;цены&#34;&gt;Цены&lt;/h2&gt;
 
-&lt;p&gt;P ДАТА ВРЕМЯ ЦЕННОСТЬ ЦЕНА&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;P ДАТА ВРЕМЯ ЦЕННОСТЬ ЦЕНА&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;P 2004/06/21 02:18:02 AAPL $32.91&lt;br /&gt;
 P 2004/06/21 02:18:02 AU $400.00&lt;/p&gt;
