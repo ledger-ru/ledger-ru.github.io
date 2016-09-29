@@ -614,7 +614,7 @@ commodity BTC
 &lt;p&gt;Для этого необходимо вести файл с ценами/курсами (этот файл также нужен для автоматического расчета стоимости ценных бумаг), который можно сделать для автоматической загрузки из сети.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;# Укажем файл цен в балансе и попросим сконвертировать все данные в нужную валюту:
-E:\soft\ledger\ledger.exe -f &amp;quot;/cygdrive/e/tutorial.dat&amp;quot; --price-db prices.ledger bal -X USD
+E:\soft\ledger\ledger.exe -f &amp;quot;/cygdrive/e/tutorial.dat&amp;quot; --price-db prices.dat bal -X USD
              USD-157  Доходы:Зарплата
               USD130  Кошелек:Наличные
                USD27  Расходы
@@ -624,7 +624,7 @@ E:\soft\ledger\ledger.exe -f &amp;quot;/cygdrive/e/tutorial.dat&amp;quot; --pric
                    0
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Рассмотрим детально файл &lt;code&gt;prices.ledger&lt;/code&gt; (вы можете назвать его как угодно):&lt;/p&gt;
+&lt;p&gt;Рассмотрим детально файл &lt;code&gt;prices.dat&lt;/code&gt; (вы можете назвать его как угодно):&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;P 2016/08/02 10:00:00 USD 65,9553 руб.
 P 2016/09/01 10:00:00 USD 65,2535 руб.
@@ -632,6 +632,11 @@ P 2016/09/23 10:00:00 USD 63,7942 руб.
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Как мы видим, это официальные курсы валют центробанка, структурированные для ledger.&lt;/p&gt;
+
+&lt;h2 id=&#34;загрузка-курсов-валют&#34;&gt;Загрузка курсов валют&lt;/h2&gt;
+
+&lt;p&gt;Для себя я использую самописную утилиту &lt;a href=&#34;https://github.com/fokusov/gopricedb&#34;&gt;gopricedb&lt;/a&gt;, которую запускаю по расписанию.
+Она загружает курсы валют с сайта &lt;a href=&#34;http://fixer.io/&#34;&gt;fixer.io&lt;/a&gt; в файл нужного формата, который я указываю в строке запуска ledger как было описано выше.&lt;/p&gt;
 </description>
     </item>
     
@@ -758,7 +763,7 @@ P 2016/09/23 10:00:00 USD 63,7942 руб.
 Да! И многие из нас так делают. Кто-то начал детальный учет давно и все еще продолжает, потому что это не напряжно и весело. Но это не обязательно. Вы можете выработать свой подход к внесению транзакций. Но учтите, что этот способ позволяет легко найти ошибки в учете и с легкостью исправить их.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Как это возможно ?&lt;/strong&gt;&lt;br /&gt;
-Практика и процес&lt;a href=&#34;#&#34;&gt;в процессе&amp;hellip;&lt;/a&gt;инструмент, которые подходят вам. Некоторые просто импортируют большинство данных из банка (в формате CSV), поэтому им требуется лишь небольшая работа руками. Кто-то предпочитает вручную вводить каждую операцию, чтобы не упустить мелочей. &amp;ldquo;Ручной&amp;rdquo; ввод данных обычно не нужен благодаря интерактивным консольным утилитам (&lt;strong&gt;hledger add&lt;/strong&gt; и подобные), web-утилитам (hledger-web и подобные), утилитам с GUI (ledgerhelpers), умным редакторам (типа emacs &amp;amp; ledger-mode, vim, sublime-text с плагином), сценариям повторяющихся транзакций. Если использовать импорт банковских CSV и ввод небольшого количества операций в вашем любимом редакторе, это в среднем будет занимать минут 15 в день, и это неплохая инвестиция.&lt;/p&gt;
+Практика и процес/инструмент, которые подходят вам. Некоторые просто импортируют большинство данных из банка (в формате CSV), поэтому им требуется лишь небольшая работа руками. Кто-то предпочитает вручную вводить каждую операцию, чтобы не упустить мелочей. &amp;ldquo;Ручной&amp;rdquo; ввод данных обычно не нужен благодаря интерактивным консольным утилитам (&lt;strong&gt;hledger add&lt;/strong&gt; и подобные), web-утилитам (hledger-web и подобные), утилитам с GUI (ledgerhelpers), умным редакторам (типа emacs &amp;amp; ledger-mode, vim, sublime-text с плагином), сценариям повторяющихся транзакций. Если использовать импорт банковских CSV и ввод небольшого количества операций в вашем любимом редакторе, это в среднем будет занимать минут 15 в день, и это неплохая инвестиция.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Как я могу использовать данные из моего банка или мобильного приложения ?&lt;/strong&gt;&lt;br /&gt;
 Если вы можете выгрузить их в формат CSV, то вы без проблем загрузите их в формат Ledger. Также ниже перечислено несколько утилит для конвертации из форматов OFX, QIF и т.п.&lt;/p&gt;
@@ -782,7 +787,7 @@ P 2016/09/23 10:00:00 USD 63,7942 руб.
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;strong&gt;&lt;a href=&#34;http://ledger-cli.org&#34;&gt;Ledger&lt;/a&gt;&lt;/strong&gt;, 2003&lt;/td&gt;
-&lt;td&gt;2016&lt;a href=&#34;#&#34;&gt;в процессе&amp;hellip;&lt;/a&gt; 01&lt;/td&gt;
+&lt;td&gt;2016 / 01&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://github.com/ledger/ledger&#34;&gt;C++&lt;/a&gt;          113 &lt;!-- ([openhub](https://www.openhub.net/p/ledger)) --&gt;&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;http://list.ledger-cli.org/&#34;&gt;ledger-cli&lt;/a&gt; &lt;!-- ([gmane](http://dir.gmane.org/gmane.comp.finance.ledger.general)) --&gt;                  650&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;http://webchat.freenode.net/?channels=ledger&amp;amp;randomnick=1&#34;&gt;#ledger&lt;/a&gt;        85&lt;/td&gt;
@@ -790,7 +795,7 @@ P 2016/09/23 10:00:00 USD 63,7942 руб.
 
 &lt;tr&gt;
 &lt;td&gt;&lt;strong&gt;&lt;a href=&#34;http://hledger.org&#34;&gt;hledger&lt;/a&gt;&lt;/strong&gt;, 2007&lt;/td&gt;
-&lt;td&gt;2015&lt;a href=&#34;#&#34;&gt;в процессе&amp;hellip;&lt;/a&gt; 10&lt;/td&gt;
+&lt;td&gt;2015 / 10&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;http://code.hledger.org&#34;&gt;Haskell&lt;/a&gt;                43 &lt;!-- ([openhub](https://www.openhub.net/p/hledger)) --&gt;&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;http://list.hledger.org/&#34;&gt;hledger&lt;/a&gt; &lt;!-- ([gmane](http://dir.gmane.org/gmane.comp.finance.ledger.hledger)) --&gt;                         75&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;http://webchat.freenode.net/?channels=hledger&amp;amp;randomnick=1&#34;&gt;#hledger&lt;/a&gt;      30&lt;/td&gt;
@@ -806,7 +811,7 @@ P 2016/09/23 10:00:00 USD 63,7942 руб.
 
 &lt;tr&gt;
 &lt;td&gt;Abandon, 2013&lt;/td&gt;
-&lt;td&gt;2016&lt;a href=&#34;#&#34;&gt;в процессе&amp;hellip;&lt;/a&gt; 09&lt;/td&gt;
+&lt;td&gt;2016 / 09&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://github.com/hrj/abandon&#34;&gt;Scala&lt;/a&gt;            8 &lt;!-- ([openhub](https://www.openhub.net/p/abandon)) --&gt;&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://gitter.im/hrj/abandon&#34;&gt;gitter&lt;/a&gt;&lt;/td&gt;
@@ -886,6 +891,7 @@ P 2016/09/23 10:00:00 USD 63,7942 руб.
 &lt;li&gt;&lt;a href=&#34;http://hackage.haskell.org/package/hledger-irr&#34;&gt;hledger-irr&lt;/a&gt; рассчитывает эффективную ставку по журналу Ledger&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/nathankot/ledger-get-prices&#34;&gt;ledger-get-prices&lt;/a&gt; скачивает цены с рынков ценных бумаг&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/tlvince/ledger-tutorials&#34;&gt;ledger-tutorials&lt;/a&gt; конвертирует самоучитель от Pete Keen в формат ebook&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/fokusov/gopricedb&#34;&gt;gopricedb&lt;/a&gt; - утилита на Go, загружающая курсы валют для ledger&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;импорт-конвертация-данных&#34;&gt;импорт/конвертация данных&lt;/h2&gt;

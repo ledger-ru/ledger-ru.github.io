@@ -516,7 +516,7 @@ commodity BTC
 <p>Для этого необходимо вести файл с ценами/курсами (этот файл также нужен для автоматического расчета стоимости ценных бумаг), который можно сделать для автоматической загрузки из сети.</p>
 
 <pre><code># Укажем файл цен в балансе и попросим сконвертировать все данные в нужную валюту:
-E:\soft\ledger\ledger.exe -f &quot;/cygdrive/e/tutorial.dat&quot; --price-db prices.ledger bal -X USD
+E:\soft\ledger\ledger.exe -f &quot;/cygdrive/e/tutorial.dat&quot; --price-db prices.dat bal -X USD
              USD-157  Доходы:Зарплата
               USD130  Кошелек:Наличные
                USD27  Расходы
@@ -526,7 +526,7 @@ E:\soft\ledger\ledger.exe -f &quot;/cygdrive/e/tutorial.dat&quot; --price-db pri
                    0
 </code></pre>
 
-<p>Рассмотрим детально файл <code>prices.ledger</code> (вы можете назвать его как угодно):</p>
+<p>Рассмотрим детально файл <code>prices.dat</code> (вы можете назвать его как угодно):</p>
 
 <pre><code>P 2016/08/02 10:00:00 USD 65,9553 руб.
 P 2016/09/01 10:00:00 USD 65,2535 руб.
@@ -534,6 +534,11 @@ P 2016/09/23 10:00:00 USD 63,7942 руб.
 </code></pre>
 
 <p>Как мы видим, это официальные курсы валют центробанка, структурированные для ledger.</p>
+
+<h2 id="загрузка-курсов-валют">Загрузка курсов валют</h2>
+
+<p>Для себя я использую самописную утилиту <a href="https://github.com/fokusov/gopricedb">gopricedb</a>, которую запускаю по расписанию.
+Она загружает курсы валют с сайта <a href="http://fixer.io/">fixer.io</a> в файл нужного формата, который я указываю в строке запуска ledger как было описано выше.</p>
 
 
 			<aside class="copyright" role="note">
