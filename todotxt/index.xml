@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Todotxts on Личные финансы для гиков</title>
+    <link>https://ledger-ru.github.io/todotxt/</link>
+    <description>Recent content in Todotxts on Личные финансы для гиков</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <lastBuildDate>Thu, 29 Sep 2016 22:36:19 +0300</lastBuildDate>
+    <atom:link href="https://ledger-ru.github.io/todotxt/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Список дел todo.txt</title>
+      <link>https://ledger-ru.github.io/todotxt/</link>
+      <pubDate>Thu, 29 Sep 2016 22:36:19 +0300</pubDate>
+      
+      <guid>https://ledger-ru.github.io/todotxt/</guid>
+      <description>
+
+&lt;p&gt;Как написано в &lt;a href=&#34;https://ledger-ru.github.io/goplain/&#34;&gt;Манифесте Go Plain&lt;/a&gt; я предпочитаю простоту красивостям. &lt;br /&gt;
+Особенно когда это касается продуктивности. &lt;br /&gt;
+Списки дел - это основной компонент моей продуктивности. Причем я использую систему GTD уже очень давно и перепробовал много хороших утилит, прежде чем прийти к &lt;a href=&#34;http://www.todotxt.com/&#34;&gt;системе Todo.txt&lt;/a&gt; &lt;br /&gt;
+В данном разделе я рассматриваю ключевые особенности этой системы и существующие утилиты, помогающей в работе с ней, хотя, как вы наверное поняли, иногда достаточно простого текстового редактора :)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://ledger-ru.github.io/todotxt.png&#34; alt=&#34;todotxt&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;ключевые-особенности&#34;&gt;Ключевые особенности&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Список дел должен быть важным инструментом управления вашим днем.&lt;/li&gt;
+&lt;li&gt;Сохраняйте список задач простым, как для скорости, так и для фокусирования только на важном: на работе, а не на управлении задачами.&lt;/li&gt;
+&lt;li&gt;Охватывайте ВСЕ ваши задачи и делайте это не медля.&lt;/li&gt;
+&lt;li&gt;Управляйте вашим списком задач, основываясь на приоритетах.&lt;/li&gt;
+&lt;li&gt;Всегда держите список задач в актуальном состоянии и обновляйте по мере необходимости. Храните не первоочередные задачи в другом месте. К примеру, планы на будущее и долгосрочные задачи. Это поможет сконцентрироваться только на важном.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;todo-txt&#34;&gt;Todo.txt&lt;/h2&gt;
+
+&lt;p&gt;Эту систему разработала Gina Tripani - блогер, подскастер, разработчик и основатель LifeHacker. &lt;br /&gt;
+Она сама, а также огромное количество разработчиков создали различное ПО для работы с этим форматом. Сейчас есть как утилиты командной строки, так и утилиты с графическим интерфейсом, прекрасно работающие во всех современных операционных системах.&lt;/p&gt;
+
+&lt;h2 id=&#34;формат-файла&#34;&gt;Формат файла&lt;/h2&gt;
+
+&lt;p&gt;Формат совершенно &lt;a href=&#34;https://github.com/ginatrapani/todo.txt-cli/wiki/The-Todo.txt-Format&#34;&gt;не сложный&lt;/a&gt;, но при этом отвечающий требованиям системы &lt;a href=&#34;http://www.davidco.com/about-gtd&#34;&gt;GTD&lt;/a&gt; :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(A) Позвонить маме @Телефон +Семья
+(A) Запланировать ежегодный осмотр +Здоровье
+(B) Содержание главы 5 +Роман @Компьютер
+(C) Добавить обожку @Офис +TPSReports
+Спланировать сад во дворе @Дом
+Взять молоко @ПродуктовыйМагазин
+Найти услуги самиздата +Роман @Компьютер
+x Скачать Todo.txt в телефон @Телефон
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;три-кита-эффективного-списка-задач&#34;&gt;Три &amp;ldquo;кита&amp;rdquo; эффективного списка задач&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Приоритет.&lt;/strong&gt; Ваш список задач должен вам подсказать какая следующая важная задача для вас - по проекту, контексту или вообще. Вы можете присвоить приоритет любой задаче, чтобы она вышла вверх списка.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Проект.&lt;/strong&gt; Любой, даже самый крупный проект, сдвигается с места, когда выполняется малейшая задача, привязанныя к нему. Ваш список задач должен уметь выводить задачи, привязанных к конкретному проекту.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Констекст.&lt;/strong&gt; По методологии GTD задачи можно привязывать к контексту, т.е. к месту или ситуации. Сообщения, которые вы должны отправить идут в контексте “@почта”; звонки в “@телефон”, домашние дела в “@дом”.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Когда у вас появляется свободная минутка и есть возможность позвонить, вы проверяете задачи в контексте “@телефон” и делаете один-два звонка.&lt;/p&gt;
+
+&lt;p&gt;Это все реально с todo.txt.&lt;/p&gt;
+
+&lt;h2 id=&#34;особенности-формата&#34;&gt;Особенности формата&lt;/h2&gt;
+
+&lt;p&gt;Ваш Todo.txt это обычный текстовый файл. При этом, чтобы вы могли пользоваться всей мощью типа приоритетов, проектов, контекстов, дат создания и завершения, нужно соблюдать всего нескольких правил.&lt;/p&gt;
+
+&lt;p&gt;Первое и наиважнейшее правило гласит: &lt;strong&gt;одна строка файла todo.txt это одна задача&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;незавершенные-задачи&#34;&gt;Незавершенные задачи&lt;/h2&gt;
+
+&lt;p&gt;Красота формата в том, что он неструктурирован. Вы можете создавать задачи так, как вам хочется.&lt;/p&gt;
+
+&lt;p&gt;Только используйте специальную нотацию для проектов (+Проект), контекстов (@Контекст) и приоритетов (А).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Правило 1. Если указан приоритет, то такая задача всегда наверху списка.&lt;/strong&gt; &lt;br /&gt;
+Приоритет указывается символами A-Z в верхнем регистре в скобках с обязательным последующим пробелом:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(A) Позвонить маме
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;К примеру, эти задачи не имеют приоритета:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    Обязательно позвонить маме (A) @телефон @потом
+    (b) Сходить к боссу
+    (B)-&amp;gt;Просмотреть отчет
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Правило 2. Дата создания задачи (опциональна) указывается сразу после приоритета с пробелом&lt;/strong&gt; &lt;br /&gt;
+Если приоритета нет, то дата создания идет в начале строки в формате ГГГГ-ММ-ДД.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    2016-03-02 Документ +TodoTxt формат задач
+    (A) 2016-03-02 Позвонить маме
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Правило 3. Контексты и проекты указываются в любом месте строки, сразу после приоритета и даты создания.&lt;/strong&gt; &lt;br /&gt;
+Проекты начинаются со знака &amp;ldquo;плюс&amp;rdquo; и не должны содержать пробелов (так: &amp;ldquo;+МойСуперПроект&amp;rdquo;). Контексты начинаются со знака @ и также не должны содержать пробелов (пример: &amp;ldquo;@ПродуктовыйМагазин&amp;rdquo;).&lt;/p&gt;
+
+&lt;p&gt;К примеру, эта задача входит одновременно в проекты +Семья и +МирЛюбовьИСчастье, а также принадлежит контекстам @iphone и @телефон:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(A) Позвонить маме +Семья +МирЛюбовьИСчастье @iphone @телефон
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Эта задача не содержит контекста:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Написать SoAndSo на soandso@example.com
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;А эта не входит ни в один проект:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Выучить как сложить 2+2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;завершенные-задачи&#34;&gt;Завершенные задачи&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Правило 1. Завершенные задачи начинаются с символа x&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Если задача начинается с символа x (латиницей с маленькой буквы) с последующим пробелом, то она считается завершенной:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;x 2016-03-03 Позвонить маме
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Это незавершенные задачи:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    xylophone lesson
+    X 2012-01-01 наложить резолюцию
+    (A) x найти цены на билеты
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;мы используем символ &amp;ldquo;x&amp;rdquo; чтобы в любом текстовом редакторе автоматическая сортировка отнесла завершенные задачи вниз списка.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Правило 2. Дата завершения идет сразу за символом x после пробела&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Пример:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;x 2011-03-02 2011-03-01 Рассмотреть pull request Тима +TodoTxtTouch @github
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;при этом приоритет задачи теряется. Если вы не хотите этого, используйте приоритет так: &lt;code&gt;pri:A&lt;/code&gt; .&lt;/p&gt;
+
+&lt;h2 id=&#34;расширения-формата&#34;&gt;Расширения формата&lt;/h2&gt;
+
+&lt;p&gt;Формат todo.txt расширяем и многие утилиты используют свой синтаксис расширений формата &lt;code&gt;ключ:значение&lt;/code&gt;. К примеру, большинство приложений используют расширение &lt;code&gt;due:2017-01-02&lt;/code&gt; как срок выполнения задачи.&lt;/p&gt;
+
+&lt;h2 id=&#34;команды-консольного-клиента-todo-sh&#34;&gt;Команды консольного клиента todo.sh&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;
+  Использование:  todo.sh [-fhpqvV] [-d ФАЙЛ_КОНФИГ] действие [номер_задачи] [описание_задачи]
+
+  Действия:
+    add &amp;quot;ЧТО Я ДОЛЖЕН СДЕЛАТЬ +проект @контекст&amp;quot; 
+    a &amp;quot;ЧТО Я ДОЛЖЕН СДЕЛАТЬ +проект @контекст&amp;quot; 
+      Добавляет &amp;quot;ЧТО Я ДОЛЖЕН СДЕЛАТЬ&amp;quot; в ваш файл todo.txt.
+      Проекты и контексты опциональны.
+      Кавычки опциональны.
+
+    addto Имя_Файла &amp;quot;ДОБАВИТЬ ТЕКСТ&amp;quot;
+      Добавляет строку в любой файл в папке с todo.txt.
+      К примеру, addto inbox.txt &amp;quot;решение об отпуске&amp;quot;
+      
+    append НОМЕР &amp;quot;ДОПОЛНИТЬ ТЕКСТ&amp;quot;
+    app НОМЕР &amp;quot;ДОПОЛНИТЬ ТЕКСТ&amp;quot;
+      Добавит ДОПОЛНИТЬ ТЕКСТ в конец задачи в строке НОМЕР.
+      Кавычки опциональны.
+
+    archive
+      Переместит выполненные задачи из файла todo.txt в done.txt и удалит пустые строки.
+
+    del НОМЕР [ТЕРМИН]
+    rm НОМЕР [ТЕРМИН]
+      Удалит задачу в строке НОМЕР в todo.txt.  
+      Если задан ТЕРМИН, удалится только он в этой строке.
+
+    depri НОМЕР 
+    dp НОМЕР
+      Удалит приоритет у задачи в строке НОМЕР в todo.txt.  
+
+    do НОМЕР
+      Пометит задачу в строке НОМЕР как выполненную в todo.txt.
+
+    list [ТЕРМИН...] 
+    ls [ТЕРМИН...]
+      Выведет все задачи, содержащие слово ТЕРМИН, отсортированные по приоритету с
+      номерами строк. Если ТЕРМИН не задан, выведет все задачи в todo.txt.
+
+    listall [ТЕРМИН...]
+    lsa [ТЕРМИН...]
+      Выведет все задачи в todo.txt И done.txt, содержащие ТЕРМИН, отсортированные
+      по приоритету с номерами строк. Если ТЕРМИН не указан, выведет все задачи
+      в todo.txt И done.txt объединенные и сортированные.
+
+    listcon
+    lsc
+      Выведет все контексты в todo.txt.
+
+    listfile ФАЙЛ [ТЕРМИН...]
+    lf ФАЙЛ [ТЕРМИН...]
+      Выведет все строки в файле ФАЙЛ из папки с todo.txt, отсортированные
+      по приоритету с номерами строк. Если указан ТЕРМИН, выведет все строки,
+      содержащие ТЕРМИН в файле ФАЙЛ.
+
+    listpri [ПРИОРИТЕТ]
+    lsp [ПРИОРИТЕТ]
+      Выведет все задачи с приоритетом ПРИОРИТЕТ.
+      Если не указать ПРИОРИТЕТ, выведет все приоритетные задачи.
+
+    listproj
+    lsprj
+      Выведет все задачи с проектами (со знаком +) из todo.txt.
+
+    move НОМЕР ФАЙЛКУДА [ФАЙЛ]
+    mv НОМЕР ФАЙЛКУДА [ФАЙЛ]
+      Переместит строки из файла (ФАЙЛ) в файл (ФАЙЛКУДА).
+      Оба файла при этом должны находится в одной директории, указанной в 
+      конфигурационном файле. Если ФАЙЛ не указан, то берется todo.txt.
+		
+    prepend НОМЕР &amp;quot;ДОБАВИТЬ ТЕКСТ&amp;quot;
+    prep НОМЕР &amp;quot;ДОБАВИТЬ ТЕКСТ&amp;quot;
+      Добавит ДОБАВИТЬ ТЕКСТ в начало строки НОМЕР.
+      Кавычки опциональны.
+
+    pri НОМЕР ПРИОРИТЕТ
+    p НОМЕР ПРИОРИТЕТ
+      Добавит ПРИОРИТЕТ в задачу на строке НОМЕР.  Если у задачи уже
+      указан приоритет, он будет заменен указанным приоритетом ПРИОРИТЕТ.
+      ПРИОРИТЕТ указывается буквами верхнего регистра от A до Z.
+
+    replace НОМЕР &amp;quot;ОБНОВЛЕННАЯ ЗАДАЧА&amp;quot;
+      Заменит задачу в строке НОМЕР на ОБНОВЛЕННАЯ ЗАДАЧА.
+
+    report
+      Добавит количество незавершенных задач и завершенных в файл report.txt.
+
+  Options:
+    -d ФАЙЛ_КОНФИГ
+        Будет задействован указанный конфигурационный файл вместо обычного ~/todo.cfg
+    -f
+        Выполняет действия без подтверждения или интерактивного ввода
+    -h
+        Выводит эту справку
+    -p
+        Плоский вид выключает раскраску
+    -a
+        Не перемещать задачи в архив автоматически при выполнении
+    -n
+        Не сохраняет номера строк; автоматически удаляет пустые строки 
+        при удалении задачи
+    -v 
+        Детальный режим включает подтверждения для действий
+    -V 
+        Выводит версию, лицензию и благодарности
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;другие-проекты-todo-txt&#34;&gt;Другие проекты Todo.txt&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Проект&lt;/th&gt;
+&lt;th&gt;ОС&lt;/th&gt;
+&lt;th&gt;Код&lt;/th&gt;
+&lt;th&gt;Сайт&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Todour&lt;/td&gt;
+&lt;td&gt;Mac, Windows, Linux&lt;/td&gt;
+&lt;td&gt;C++/Qt&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://nerdur.com/todour-pl/&#34;&gt;http://nerdur.com/todour-pl/&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;TodoTxtMac&lt;/td&gt;
+&lt;td&gt;Mac&lt;/td&gt;
+&lt;td&gt;Objective-C&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://mjdescy.github.io/TodoTxtMac/&#34;&gt;https://mjdescy.github.io/TodoTxtMac/&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;todotxt.net&lt;/td&gt;
+&lt;td&gt;Windows&lt;/td&gt;
+&lt;td&gt;.Net&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/benrhughes/todotxt.net/&#34;&gt;https://github.com/benrhughes/todotxt.net/&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;QTodoTxt&lt;/td&gt;
+&lt;td&gt;Mac, Windows, Linux&lt;/td&gt;
+&lt;td&gt;PySide (Qt)&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/mNantern/QTodoTxt&#34;&gt;https://github.com/mNantern/QTodoTxt&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;todotxt&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Rust&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/kstep/todotxt.rs&#34;&gt;https://github.com/kstep/todotxt.rs&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;topydo&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Python&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/bram85/topydo&#34;&gt;https://github.com/bram85/topydo&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;todo.py&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Python&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://git.io/todo.py&#34;&gt;https://git.io/todo.py&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;ya-todo-py&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Python&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/abztrakt/ya-todo-py&#34;&gt;https://github.com/abztrakt/ya-todo-py&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;todotxt-extention&lt;/td&gt;
+&lt;td&gt;Thunderbird&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://addons.mozilla.org/en-US/thunderbird/addon/todotxt-extension/&#34;&gt;https://addons.mozilla.org/en-US/thunderbird/addon/todotxt-extension/&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;todotxt-mode&lt;/td&gt;
+&lt;td&gt;Emacs&lt;/td&gt;
+&lt;td&gt;Elisp&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/avillafiorita/todotxt-mode&#34;&gt;https://github.com/avillafiorita/todotxt-mode&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;todotxt.el&lt;/td&gt;
+&lt;td&gt;Emacs&lt;/td&gt;
+&lt;td&gt;Elisp&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/rpdillon/todotxt.el&#34;&gt;https://github.com/rpdillon/todotxt.el&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Bulldog&lt;/td&gt;
+&lt;td&gt;Web&lt;/td&gt;
+&lt;td&gt;Ruby&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/infews/bulldog&#34;&gt;https://github.com/infews/bulldog&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;todo.txt-akonadi&lt;/td&gt;
+&lt;td&gt;KDE&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/markushx/todo.txt-akonadi&#34;&gt;https://github.com/markushx/todo.txt-akonadi&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;todotxt&lt;/td&gt;
+&lt;td&gt;Gnome 3&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://extensions.gnome.org/extension/570/todotxt/&#34;&gt;https://extensions.gnome.org/extension/570/todotxt/&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;todo.txt-PowerShell&lt;/td&gt;
+&lt;td&gt;Windows&lt;/td&gt;
+&lt;td&gt;PowerShell, C#&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/hartez/todo.txt-PowerShell&#34;&gt;https://github.com/hartez/todo.txt-PowerShell&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;todotxttouch&lt;/td&gt;
+&lt;td&gt;Android, iOS&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/ginatrapani&#34;&gt;https://github.com/ginatrapani&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.todotxt.todotxttouch&#34;&gt;https://play.google.com/store/apps/details?id=com.todotxt.todotxttouch&lt;/a&gt; , &lt;a href=&#34;http://itunes.apple.com/us/app/todo.txt-touch/id491342186?ls=1&amp;amp;mt=8&#34;&gt;http://itunes.apple.com/us/app/todo.txt-touch/id491342186?ls=1&amp;amp;mt=8&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Simpletask&lt;/td&gt;
+&lt;td&gt;Android&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://play.google.com/store/apps/details?id=nl.mpcjanssen.todotxtholo&#34;&gt;https://play.google.com/store/apps/details?id=nl.mpcjanssen.todotxtholo&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;todotxt-extention&lt;/td&gt;
+&lt;td&gt;Google Chrome&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://chrome.google.com/webstore/detail/todotxt-lean-fast-task-ma/ohjgbfjncbnecbnijmpgjhodnhbhnjgk&#34;&gt;https://chrome.google.com/webstore/detail/todotxt-lean-fast-task-ma/ohjgbfjncbnecbnijmpgjhodnhbhnjgk&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Do Stuff&lt;/td&gt;
+&lt;td&gt;Ubuntu&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://launchpad.net/~ximilian/+archive/ppa&#34;&gt;https://launchpad.net/~ximilian/+archive/ppa&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Day Tasks&lt;/td&gt;
+&lt;td&gt;Ubuntu&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://burnsoftware.wordpress.com/daytasks/&#34;&gt;http://burnsoftware.wordpress.com/daytasks/&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Vim plugin&lt;/td&gt;
+&lt;td&gt;Vim&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/freitass/todo.txt-vim&#34;&gt;https://github.com/freitass/todo.txt-vim&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Sublime plugin&lt;/td&gt;
+&lt;td&gt;Sublime Text 3&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/dertuxmalwieder/SublimeTodoTxt&#34;&gt;https://github.com/dertuxmalwieder/SublimeTodoTxt&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;снимки-экрана&#34;&gt;Снимки экрана&lt;/h2&gt;
+
+&lt;h1 id=&#34;todotxt-cli&#34;&gt;todotxt-cli&lt;/h1&gt;
+
+&lt;p&gt;&lt;iframe src=&#34;https://player.vimeo.com/video/3263629&#34; width=&#34;640&#34; height=&#34;483&#34; frameborder=&#34;0&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&#34;https://vimeo.com/3263629&#34;&gt;Демонстрация Todo.txt CLI 2.0&lt;/a&gt; from &lt;a href=&#34;https://vimeo.com/user1254136&#34;&gt;Gina Trapani&lt;/a&gt; on &lt;a href=&#34;https://vimeo.com&#34;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;todour&#34;&gt;Todour&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://nerdur.com/wp/wp-content/uploads/Todour-How-it-works-lowq.mp4?_=1&#34;&gt;&lt;img src=&#34;https://ledger-ru.github.io/todour.png&#34; alt=&#34;Video&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;todotxtmac&#34;&gt;TodoTxtMac&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://ledger-ru.github.io/todotxtmac.png&#34; alt=&#34;todotxtmac&#34; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;qtodotxt&#34;&gt;QTodoTxt&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://ledger-ru.github.io/QTodoTxt.png&#34; alt=&#34;QTodoTxt&#34; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;sublime-text-3&#34;&gt;Sublime Text 3&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://ledger-ru.github.io/subl.png&#34; alt=&#34;Sublime Text 3&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

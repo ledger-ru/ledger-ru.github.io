@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="ru">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <meta name="google-site-verification" content="BRLJtg-Dz8fP9vutxOptMH3zMLYUI4XtK-mys0qoEIw" />
+    <title>Список дел todo.txt - Личные финансы для гиков</title>
+    <meta name="generator" content="Hugo 0.16" />
+
+    
+    <meta name="description" content="Ledger по-русски">
+    
+    <link rel="canonical" href="https://ledger-ru.github.io/todotxt/">
+    
+    <meta name="author" content="Igor Fokusov">
+    
+
+    <meta property="og:url" content="https://ledger-ru.github.io/todotxt/">
+    <meta property="og:title" content="Личные финансы для гиков">
+    <meta property="og:image" content="https://ledger-ru.github.io/images/logo.png">
+    <meta name="apple-mobile-web-app-title" content="Личные финансы для гиков">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://ledger-ru.github.io/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="https://ledger-ru.github.io/images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'icomoon';
+        src: url('https://ledger-ru.github.io/fonts/icomoon.eot?52m981');
+        src: url('https://ledger-ru.github.io/fonts/icomoon.eot?#iefix52m981')
+               format('embedded-opentype'),
+             url('https://ledger-ru.github.io/fonts/icomoon.woff?52m981')
+               format('woff'),
+             url('https://ledger-ru.github.io/fonts/icomoon.ttf?52m981')
+               format('truetype'),
+             url('https://ledger-ru.github.io/fonts/icomoon.svg?52m981#icomoon')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="https://ledger-ru.github.io/stylesheets/application.css">
+    <link rel="stylesheet" href="https://ledger-ru.github.io/stylesheets/temporary.css">
+    <link rel="stylesheet" href="https://ledger-ru.github.io/stylesheets/palettes.css">
+    <link rel="stylesheet" href="https://ledger-ru.github.io/stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,700|Roboto&#43;Mono">
+    <style>
+      body, input {
+        font-family: 'Roboto', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Roboto Mono', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <script src="https://ledger-ru.github.io/javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-blue-grey palette-accent-blue-grey">
+
+
+
+	
+	
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        Список дел todo.txt
+      </div>
+    </div>
+
+    
+
+    
+    <div class="button button-github" role="button" aria-label="GitHub">
+      <a href="https://github.com/ledger-ru" title="@ledger-ru on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+    </div>
+    
+    
+    
+    <div class="button button-telegram" role="button" aria-label="Telegram">
+      <a href="https://telegram.me/ledger_ru" title="@ledger_ru on Telegram" target="_blank" class="toggle-button icon icon-telegram"></a>
+    </div>
+        
+    
+        
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Главная" href="https://ledger-ru.github.io/">
+	
+	Главная
+</a>
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Снимки экрана" href="https://ledger-ru.github.io/screenshots/">
+	
+	Снимки экрана
+</a>
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Установка" href="https://ledger-ru.github.io/install/">
+	
+	Установка
+</a>
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Учебник" href="https://ledger-ru.github.io/tutorial/">
+	
+	Учебник
+</a>
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Шпаргалка" href="https://ledger-ru.github.io/cheatsheet/">
+	
+	Шпаргалка
+</a>
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Манифест" href="https://ledger-ru.github.io/goplain/">
+	
+	Манифест
+</a>
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a class="current" title="Список дел todo.txt" href="https://ledger-ru.github.io/todotxt/">
+	
+	Список дел todo.txt
+</a>
+
+
+<ul id="scrollspy">
+</ul>
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+        <hr>
+        <span class="section">Contacts</span>
+        
+        <ul>
+          
+
+          
+          <li>
+            <a href="https://github.com/ledger-ru" target="_blank" title="@ledger-ru on GitHub">
+              @ledger-ru on GitHub
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="https://telegram.me/ledger_ru" target="_blank" title="@ledger_ru on Telegram">
+              @ledger_ru on Telegram
+            </a>
+          </li>
+                   
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1>Список дел todo.txt </h1>
+
+			
+
+<p>Как написано в <a href="https://ledger-ru.github.io/goplain/">Манифесте Go Plain</a> я предпочитаю простоту красивостям. <br />
+Особенно когда это касается продуктивности. <br />
+Списки дел - это основной компонент моей продуктивности. Причем я использую систему GTD уже очень давно и перепробовал много хороших утилит, прежде чем прийти к <a href="http://www.todotxt.com/">системе Todo.txt</a> <br />
+В данном разделе я рассматриваю ключевые особенности этой системы и существующие утилиты, помогающей в работе с ней, хотя, как вы наверное поняли, иногда достаточно простого текстового редактора :)</p>
+
+<p><img src="https://ledger-ru.github.io/todotxt.png" alt="todotxt" /></p>
+
+<h2 id="ключевые-особенности">Ключевые особенности</h2>
+
+<ul>
+<li>Список дел должен быть важным инструментом управления вашим днем.</li>
+<li>Сохраняйте список задач простым, как для скорости, так и для фокусирования только на важном: на работе, а не на управлении задачами.</li>
+<li>Охватывайте ВСЕ ваши задачи и делайте это не медля.</li>
+<li>Управляйте вашим списком задач, основываясь на приоритетах.</li>
+<li>Всегда держите список задач в актуальном состоянии и обновляйте по мере необходимости. Храните не первоочередные задачи в другом месте. К примеру, планы на будущее и долгосрочные задачи. Это поможет сконцентрироваться только на важном.</li>
+</ul>
+
+<h2 id="todo-txt">Todo.txt</h2>
+
+<p>Эту систему разработала Gina Tripani - блогер, подскастер, разработчик и основатель LifeHacker. <br />
+Она сама, а также огромное количество разработчиков создали различное ПО для работы с этим форматом. Сейчас есть как утилиты командной строки, так и утилиты с графическим интерфейсом, прекрасно работающие во всех современных операционных системах.</p>
+
+<h2 id="формат-файла">Формат файла</h2>
+
+<p>Формат совершенно <a href="https://github.com/ginatrapani/todo.txt-cli/wiki/The-Todo.txt-Format">не сложный</a>, но при этом отвечающий требованиям системы <a href="http://www.davidco.com/about-gtd">GTD</a> :</p>
+
+<pre><code>(A) Позвонить маме @Телефон +Семья
+(A) Запланировать ежегодный осмотр +Здоровье
+(B) Содержание главы 5 +Роман @Компьютер
+(C) Добавить обожку @Офис +TPSReports
+Спланировать сад во дворе @Дом
+Взять молоко @ПродуктовыйМагазин
+Найти услуги самиздата +Роман @Компьютер
+x Скачать Todo.txt в телефон @Телефон
+</code></pre>
+
+<h1 id="три-кита-эффективного-списка-задач">Три &ldquo;кита&rdquo; эффективного списка задач</h1>
+
+<ul>
+<li><strong>Приоритет.</strong> Ваш список задач должен вам подсказать какая следующая важная задача для вас - по проекту, контексту или вообще. Вы можете присвоить приоритет любой задаче, чтобы она вышла вверх списка.</li>
+<li><strong>Проект.</strong> Любой, даже самый крупный проект, сдвигается с места, когда выполняется малейшая задача, привязанныя к нему. Ваш список задач должен уметь выводить задачи, привязанных к конкретному проекту.</li>
+<li><strong>Констекст.</strong> По методологии GTD задачи можно привязывать к контексту, т.е. к месту или ситуации. Сообщения, которые вы должны отправить идут в контексте “@почта”; звонки в “@телефон”, домашние дела в “@дом”.</li>
+</ul>
+
+<p>Когда у вас появляется свободная минутка и есть возможность позвонить, вы проверяете задачи в контексте “@телефон” и делаете один-два звонка.</p>
+
+<p>Это все реально с todo.txt.</p>
+
+<h2 id="особенности-формата">Особенности формата</h2>
+
+<p>Ваш Todo.txt это обычный текстовый файл. При этом, чтобы вы могли пользоваться всей мощью типа приоритетов, проектов, контекстов, дат создания и завершения, нужно соблюдать всего нескольких правил.</p>
+
+<p>Первое и наиважнейшее правило гласит: <strong>одна строка файла todo.txt это одна задача</strong>.</p>
+
+<h2 id="незавершенные-задачи">Незавершенные задачи</h2>
+
+<p>Красота формата в том, что он неструктурирован. Вы можете создавать задачи так, как вам хочется.</p>
+
+<p>Только используйте специальную нотацию для проектов (+Проект), контекстов (@Контекст) и приоритетов (А).</p>
+
+<p><strong>Правило 1. Если указан приоритет, то такая задача всегда наверху списка.</strong> <br />
+Приоритет указывается символами A-Z в верхнем регистре в скобках с обязательным последующим пробелом:</p>
+
+<pre><code>(A) Позвонить маме
+</code></pre>
+
+<p>К примеру, эти задачи не имеют приоритета:</p>
+
+<pre><code>    Обязательно позвонить маме (A) @телефон @потом
+    (b) Сходить к боссу
+    (B)-&gt;Просмотреть отчет
+</code></pre>
+
+<p><strong>Правило 2. Дата создания задачи (опциональна) указывается сразу после приоритета с пробелом</strong> <br />
+Если приоритета нет, то дата создания идет в начале строки в формате ГГГГ-ММ-ДД.</p>
+
+<pre><code>    2016-03-02 Документ +TodoTxt формат задач
+    (A) 2016-03-02 Позвонить маме
+</code></pre>
+
+<p><strong>Правило 3. Контексты и проекты указываются в любом месте строки, сразу после приоритета и даты создания.</strong> <br />
+Проекты начинаются со знака &ldquo;плюс&rdquo; и не должны содержать пробелов (так: &ldquo;+МойСуперПроект&rdquo;). Контексты начинаются со знака @ и также не должны содержать пробелов (пример: &ldquo;@ПродуктовыйМагазин&rdquo;).</p>
+
+<p>К примеру, эта задача входит одновременно в проекты +Семья и +МирЛюбовьИСчастье, а также принадлежит контекстам @iphone и @телефон:</p>
+
+<pre><code>(A) Позвонить маме +Семья +МирЛюбовьИСчастье @iphone @телефон
+</code></pre>
+
+<p>Эта задача не содержит контекста:</p>
+
+<pre><code>Написать SoAndSo на soandso@example.com
+</code></pre>
+
+<p>А эта не входит ни в один проект:</p>
+
+<pre><code>Выучить как сложить 2+2
+</code></pre>
+
+<h2 id="завершенные-задачи">Завершенные задачи</h2>
+
+<p><strong>Правило 1. Завершенные задачи начинаются с символа x</strong></p>
+
+<p>Если задача начинается с символа x (латиницей с маленькой буквы) с последующим пробелом, то она считается завершенной:</p>
+
+<pre><code>x 2016-03-03 Позвонить маме
+</code></pre>
+
+<p>Это незавершенные задачи:</p>
+
+<pre><code>    xylophone lesson
+    X 2012-01-01 наложить резолюцию
+    (A) x найти цены на билеты
+</code></pre>
+
+<p>мы используем символ &ldquo;x&rdquo; чтобы в любом текстовом редакторе автоматическая сортировка отнесла завершенные задачи вниз списка.</p>
+
+<p><strong>Правило 2. Дата завершения идет сразу за символом x после пробела</strong></p>
+
+<p>Пример:</p>
+
+<pre><code>x 2011-03-02 2011-03-01 Рассмотреть pull request Тима +TodoTxtTouch @github
+</code></pre>
+
+<p>при этом приоритет задачи теряется. Если вы не хотите этого, используйте приоритет так: <code>pri:A</code> .</p>
+
+<h2 id="расширения-формата">Расширения формата</h2>
+
+<p>Формат todo.txt расширяем и многие утилиты используют свой синтаксис расширений формата <code>ключ:значение</code>. К примеру, большинство приложений используют расширение <code>due:2017-01-02</code> как срок выполнения задачи.</p>
+
+<h2 id="команды-консольного-клиента-todo-sh">Команды консольного клиента todo.sh</h2>
+
+<pre><code>
+  Использование:  todo.sh [-fhpqvV] [-d ФАЙЛ_КОНФИГ] действие [номер_задачи] [описание_задачи]
+
+  Действия:
+    add &quot;ЧТО Я ДОЛЖЕН СДЕЛАТЬ +проект @контекст&quot; 
+    a &quot;ЧТО Я ДОЛЖЕН СДЕЛАТЬ +проект @контекст&quot; 
+      Добавляет &quot;ЧТО Я ДОЛЖЕН СДЕЛАТЬ&quot; в ваш файл todo.txt.
+      Проекты и контексты опциональны.
+      Кавычки опциональны.
+
+    addto Имя_Файла &quot;ДОБАВИТЬ ТЕКСТ&quot;
+      Добавляет строку в любой файл в папке с todo.txt.
+      К примеру, addto inbox.txt &quot;решение об отпуске&quot;
+      
+    append НОМЕР &quot;ДОПОЛНИТЬ ТЕКСТ&quot;
+    app НОМЕР &quot;ДОПОЛНИТЬ ТЕКСТ&quot;
+      Добавит ДОПОЛНИТЬ ТЕКСТ в конец задачи в строке НОМЕР.
+      Кавычки опциональны.
+
+    archive
+      Переместит выполненные задачи из файла todo.txt в done.txt и удалит пустые строки.
+
+    del НОМЕР [ТЕРМИН]
+    rm НОМЕР [ТЕРМИН]
+      Удалит задачу в строке НОМЕР в todo.txt.  
+      Если задан ТЕРМИН, удалится только он в этой строке.
+
+    depri НОМЕР 
+    dp НОМЕР
+      Удалит приоритет у задачи в строке НОМЕР в todo.txt.  
+
+    do НОМЕР
+      Пометит задачу в строке НОМЕР как выполненную в todo.txt.
+
+    list [ТЕРМИН...] 
+    ls [ТЕРМИН...]
+      Выведет все задачи, содержащие слово ТЕРМИН, отсортированные по приоритету с
+      номерами строк. Если ТЕРМИН не задан, выведет все задачи в todo.txt.
+
+    listall [ТЕРМИН...]
+    lsa [ТЕРМИН...]
+      Выведет все задачи в todo.txt И done.txt, содержащие ТЕРМИН, отсортированные
+      по приоритету с номерами строк. Если ТЕРМИН не указан, выведет все задачи
+      в todo.txt И done.txt объединенные и сортированные.
+
+    listcon
+    lsc
+      Выведет все контексты в todo.txt.
+
+    listfile ФАЙЛ [ТЕРМИН...]
+    lf ФАЙЛ [ТЕРМИН...]
+      Выведет все строки в файле ФАЙЛ из папки с todo.txt, отсортированные
+      по приоритету с номерами строк. Если указан ТЕРМИН, выведет все строки,
+      содержащие ТЕРМИН в файле ФАЙЛ.
+
+    listpri [ПРИОРИТЕТ]
+    lsp [ПРИОРИТЕТ]
+      Выведет все задачи с приоритетом ПРИОРИТЕТ.
+      Если не указать ПРИОРИТЕТ, выведет все приоритетные задачи.
+
+    listproj
+    lsprj
+      Выведет все задачи с проектами (со знаком +) из todo.txt.
+
+    move НОМЕР ФАЙЛКУДА [ФАЙЛ]
+    mv НОМЕР ФАЙЛКУДА [ФАЙЛ]
+      Переместит строки из файла (ФАЙЛ) в файл (ФАЙЛКУДА).
+      Оба файла при этом должны находится в одной директории, указанной в 
+      конфигурационном файле. Если ФАЙЛ не указан, то берется todo.txt.
+		
+    prepend НОМЕР &quot;ДОБАВИТЬ ТЕКСТ&quot;
+    prep НОМЕР &quot;ДОБАВИТЬ ТЕКСТ&quot;
+      Добавит ДОБАВИТЬ ТЕКСТ в начало строки НОМЕР.
+      Кавычки опциональны.
+
+    pri НОМЕР ПРИОРИТЕТ
+    p НОМЕР ПРИОРИТЕТ
+      Добавит ПРИОРИТЕТ в задачу на строке НОМЕР.  Если у задачи уже
+      указан приоритет, он будет заменен указанным приоритетом ПРИОРИТЕТ.
+      ПРИОРИТЕТ указывается буквами верхнего регистра от A до Z.
+
+    replace НОМЕР &quot;ОБНОВЛЕННАЯ ЗАДАЧА&quot;
+      Заменит задачу в строке НОМЕР на ОБНОВЛЕННАЯ ЗАДАЧА.
+
+    report
+      Добавит количество незавершенных задач и завершенных в файл report.txt.
+
+  Options:
+    -d ФАЙЛ_КОНФИГ
+        Будет задействован указанный конфигурационный файл вместо обычного ~/todo.cfg
+    -f
+        Выполняет действия без подтверждения или интерактивного ввода
+    -h
+        Выводит эту справку
+    -p
+        Плоский вид выключает раскраску
+    -a
+        Не перемещать задачи в архив автоматически при выполнении
+    -n
+        Не сохраняет номера строк; автоматически удаляет пустые строки 
+        при удалении задачи
+    -v 
+        Детальный режим включает подтверждения для действий
+    -V 
+        Выводит версию, лицензию и благодарности
+
+</code></pre>
+
+<h2 id="другие-проекты-todo-txt">Другие проекты Todo.txt</h2>
+
+<table>
+<thead>
+<tr>
+<th>Проект</th>
+<th>ОС</th>
+<th>Код</th>
+<th>Сайт</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Todour</td>
+<td>Mac, Windows, Linux</td>
+<td>C++/Qt</td>
+<td><a href="http://nerdur.com/todour-pl/">http://nerdur.com/todour-pl/</a></td>
+</tr>
+
+<tr>
+<td>TodoTxtMac</td>
+<td>Mac</td>
+<td>Objective-C</td>
+<td><a href="https://mjdescy.github.io/TodoTxtMac/">https://mjdescy.github.io/TodoTxtMac/</a></td>
+</tr>
+
+<tr>
+<td>todotxt.net</td>
+<td>Windows</td>
+<td>.Net</td>
+<td><a href="https://github.com/benrhughes/todotxt.net/">https://github.com/benrhughes/todotxt.net/</a></td>
+</tr>
+
+<tr>
+<td>QTodoTxt</td>
+<td>Mac, Windows, Linux</td>
+<td>PySide (Qt)</td>
+<td><a href="https://github.com/mNantern/QTodoTxt">https://github.com/mNantern/QTodoTxt</a></td>
+</tr>
+
+<tr>
+<td>todotxt</td>
+<td></td>
+<td>Rust</td>
+<td><a href="https://github.com/kstep/todotxt.rs">https://github.com/kstep/todotxt.rs</a></td>
+</tr>
+
+<tr>
+<td>topydo</td>
+<td></td>
+<td>Python</td>
+<td><a href="https://github.com/bram85/topydo">https://github.com/bram85/topydo</a></td>
+</tr>
+
+<tr>
+<td>todo.py</td>
+<td></td>
+<td>Python</td>
+<td><a href="https://git.io/todo.py">https://git.io/todo.py</a></td>
+</tr>
+
+<tr>
+<td>ya-todo-py</td>
+<td></td>
+<td>Python</td>
+<td><a href="https://github.com/abztrakt/ya-todo-py">https://github.com/abztrakt/ya-todo-py</a></td>
+</tr>
+
+<tr>
+<td>todotxt-extention</td>
+<td>Thunderbird</td>
+<td></td>
+<td><a href="https://addons.mozilla.org/en-US/thunderbird/addon/todotxt-extension/">https://addons.mozilla.org/en-US/thunderbird/addon/todotxt-extension/</a></td>
+</tr>
+
+<tr>
+<td>todotxt-mode</td>
+<td>Emacs</td>
+<td>Elisp</td>
+<td><a href="https://github.com/avillafiorita/todotxt-mode">https://github.com/avillafiorita/todotxt-mode</a></td>
+</tr>
+
+<tr>
+<td>todotxt.el</td>
+<td>Emacs</td>
+<td>Elisp</td>
+<td><a href="https://github.com/rpdillon/todotxt.el">https://github.com/rpdillon/todotxt.el</a></td>
+</tr>
+
+<tr>
+<td>Bulldog</td>
+<td>Web</td>
+<td>Ruby</td>
+<td><a href="https://github.com/infews/bulldog">https://github.com/infews/bulldog</a></td>
+</tr>
+
+<tr>
+<td>todo.txt-akonadi</td>
+<td>KDE</td>
+<td></td>
+<td><a href="https://github.com/markushx/todo.txt-akonadi">https://github.com/markushx/todo.txt-akonadi</a></td>
+</tr>
+
+<tr>
+<td>todotxt</td>
+<td>Gnome 3</td>
+<td></td>
+<td><a href="https://extensions.gnome.org/extension/570/todotxt/">https://extensions.gnome.org/extension/570/todotxt/</a></td>
+</tr>
+
+<tr>
+<td>todo.txt-PowerShell</td>
+<td>Windows</td>
+<td>PowerShell, C#</td>
+<td><a href="https://github.com/hartez/todo.txt-PowerShell">https://github.com/hartez/todo.txt-PowerShell</a></td>
+</tr>
+
+<tr>
+<td>todotxttouch</td>
+<td>Android, iOS</td>
+<td><a href="https://github.com/ginatrapani">https://github.com/ginatrapani</a></td>
+<td><a href="https://play.google.com/store/apps/details?id=com.todotxt.todotxttouch">https://play.google.com/store/apps/details?id=com.todotxt.todotxttouch</a> , <a href="http://itunes.apple.com/us/app/todo.txt-touch/id491342186?ls=1&amp;mt=8">http://itunes.apple.com/us/app/todo.txt-touch/id491342186?ls=1&amp;mt=8</a></td>
+</tr>
+
+<tr>
+<td>Simpletask</td>
+<td>Android</td>
+<td></td>
+<td><a href="https://play.google.com/store/apps/details?id=nl.mpcjanssen.todotxtholo">https://play.google.com/store/apps/details?id=nl.mpcjanssen.todotxtholo</a></td>
+</tr>
+
+<tr>
+<td>todotxt-extention</td>
+<td>Google Chrome</td>
+<td></td>
+<td><a href="https://chrome.google.com/webstore/detail/todotxt-lean-fast-task-ma/ohjgbfjncbnecbnijmpgjhodnhbhnjgk">https://chrome.google.com/webstore/detail/todotxt-lean-fast-task-ma/ohjgbfjncbnecbnijmpgjhodnhbhnjgk</a></td>
+</tr>
+
+<tr>
+<td>Do Stuff</td>
+<td>Ubuntu</td>
+<td></td>
+<td><a href="https://launchpad.net/~ximilian/+archive/ppa">https://launchpad.net/~ximilian/+archive/ppa</a></td>
+</tr>
+
+<tr>
+<td>Day Tasks</td>
+<td>Ubuntu</td>
+<td></td>
+<td><a href="http://burnsoftware.wordpress.com/daytasks/">http://burnsoftware.wordpress.com/daytasks/</a></td>
+</tr>
+
+<tr>
+<td>Vim plugin</td>
+<td>Vim</td>
+<td></td>
+<td><a href="https://github.com/freitass/todo.txt-vim">https://github.com/freitass/todo.txt-vim</a></td>
+</tr>
+
+<tr>
+<td>Sublime plugin</td>
+<td>Sublime Text 3</td>
+<td></td>
+<td><a href="https://github.com/dertuxmalwieder/SublimeTodoTxt">https://github.com/dertuxmalwieder/SublimeTodoTxt</a></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="снимки-экрана">Снимки экрана</h2>
+
+<h1 id="todotxt-cli">todotxt-cli</h1>
+
+<p><iframe src="https://player.vimeo.com/video/3263629" width="640" height="483" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/3263629">Демонстрация Todo.txt CLI 2.0</a> from <a href="https://vimeo.com/user1254136">Gina Trapani</a> on <a href="https://vimeo.com">Vimeo</a>.</p></p>
+
+<h1 id="todour">Todour</h1>
+
+<p><a href="http://nerdur.com/wp/wp-content/uploads/Todour-How-it-works-lowq.mp4?_=1"><img src="https://ledger-ru.github.io/todour.png" alt="Video" /></a></p>
+
+<h1 id="todotxtmac">TodoTxtMac</h1>
+
+<p><img src="https://ledger-ru.github.io/todotxtmac.png" alt="todotxtmac" /></p>
+
+<h1 id="qtodotxt">QTodoTxt</h1>
+
+<p><img src="https://ledger-ru.github.io/QTodoTxt.png" alt="QTodoTxt" /></p>
+
+<h1 id="sublime-text-3">Sublime Text 3</h1>
+
+<p><img src="https://ledger-ru.github.io/subl.png" alt="Sublime Text 3" /></p>
+
+
+			<aside class="copyright" role="note">
+				
+				&copy; 2016 MIT license &ndash;
+				
+				Powered by
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				and 
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = 'https:\/\/ledger-ru.github.io\/';
+      var repo_id  = 'ledger-ru\/ledger-ru.github.io';
+    
+    </script>
+
+    <script src="https://ledger-ru.github.io/javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+            
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+        
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "#";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+      <script>
+        (function(i,s,o,g,r,a,m){
+          i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||
+          []).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;
+          m.parentNode.insertBefore(a,m)
+        })(window, document,
+          'script', '//www.google-analytics.com/analytics.js', 'ga');
+         
+        ga('create', 'UA-54274841-8', 'auto');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+         
+        var buttons = document.querySelectorAll('a');
+        Array.prototype.map.call(buttons, function(item) {
+          if (item.host != document.location.host) {
+            item.addEventListener('click', function() {
+              var action = item.getAttribute('data-action') || 'follow';
+              ga('send', 'event', 'outbound', action, item.href);
+            });
+          }
+        });
+         
+        var query = document.querySelector('.query');
+        query.addEventListener('blur', function() {
+          if (this.value) {
+            var path = document.location.pathname;
+            ga('send', 'pageview', path + '?q=' + this.value);
+          }
+        });
+      </script>
+    
+
+    <script src="//gohugo.io/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
