@@ -17,8 +17,6 @@
       <guid>https://ledger-ru.github.io/goplain/</guid>
       <description>
 
-&lt;p&gt;Оригинал взят у &lt;a href=&#34;http://www.ostricher.com/2016/03/go-plain-personal-productivity-system/&#34;&gt;Itamar Ostricher&lt;/a&gt;. Все благодарности - ему.&lt;/p&gt;
-
 &lt;p&gt;В последнее время я полностью переосмыслил систему личной продуктивности и представляю вам &lt;strong&gt;Go Plain&lt;/strong&gt; - это система личной продуктивности, основанная на простоте. &lt;br /&gt;
 Эта статья - манифест этой системы.&lt;/p&gt;
 
@@ -27,7 +25,7 @@
 &lt;p&gt;&lt;strong&gt;Это мое видение личной эффективности и оно основано только на моих потребностях, привычках и стиле жизни.
 Используйте на свой страх и риск :-)&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;манифест-go-plain&#34;&gt;Манифест Go Plain&lt;/h1&gt;
+&lt;h2 id=&#34;манифест-go-plain&#34;&gt;Манифест Go Plain&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Чем проще, тем лучше.&lt;/li&gt;
@@ -41,6 +39,14 @@
 &lt;li&gt;Придерживайтесь основных и стабильных компонент ваших сервисов. Эзотерические функции могут быть полезны для эзотерических сценариев, но эти функции могут перестать работать как надо или исчезнуть со временем.&lt;/li&gt;
 &lt;li&gt;Опен-сорс лучше проприетарщины, но считаю совершенно нормальным платить за хороший продукт / услугу (да и “open source” совсем не значит “бесплатный”).&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h2 id=&#34;ресурсы&#34;&gt;Ресурсы&lt;/h2&gt;
+
+&lt;p&gt;Этот сайт построен вокруг системы Go Plain - здесь вы найдете полезную информацию и утилиты для наиболее эффективной работы. &lt;/p&gt;
+
+&lt;p&gt;В частности, в разделе &lt;a href=&#34;getting-started/&#34;&gt;Бухгалтерия для гика&lt;/a&gt; описывается система финансового учета, основанная на двойной записи, &lt;a href=&#34;http://ledger-cli.org/&#34;&gt;ledger&lt;/a&gt;. А в разделе &lt;a href=&#34;todotxt/&#34;&gt;Список дел todo.txt&lt;/a&gt; - система постановки задач &lt;a href=&#34;http://todotxt.com/&#34;&gt;todo.txt&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Оригинальная статья про Go Plain взята у &lt;a href=&#34;http://www.ostricher.com/2016/03/go-plain-personal-productivity-system/&#34;&gt;Itamar Ostricher&lt;/a&gt;.&lt;/strong&gt; Все благодарности - ему.&lt;/p&gt;
 </description>
     </item>
     
