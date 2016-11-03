@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
     <meta name="google-site-verification" content="BRLJtg-Dz8fP9vutxOptMH3zMLYUI4XtK-mys0qoEIw" />
+    <meta name="yandex-verification" content="b23adabdbe5325a3" />
     <title>Бухгалтерия для гика - Личные финансы для гиков</title>
     <meta name="generator" content="Hugo 0.16" />
 
@@ -315,13 +316,13 @@
 <h1 id="на-текстовых-файлах">&hellip;на текстовых файлах</h1>
 
 <p>В 2003 году John Wiegley представил Ledger: текстовый формат данных и утилиту командной строки для эффективного бухучета в системе <strong><a href="https://ru.wikipedia.org/wiki/%D0%94%D0%B2%D0%BE%D0%B9%D0%BD%D0%B0%D1%8F_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C">двойной записи</a></strong>.
-Эта идея прижилась среди разработчиков и технарей, поэтому сейчас существует более 5 <a href="#ledger-и-подобные-проекты">активных проектов</a>, таких как hledger и Beancount, с более чем 40 расширений и утилит и активная коммьюнити. На этом сайте вы найдете описание утилит, документацию и лучшие практики для этой системы учета.</p>
+Эта идея прижилась среди разработчиков и технарей, поэтому сейчас существует более 5 <a href="#ledger-и-подобные-проекты">активных проектов</a>, таких как hledger и Beancount, с более чем 40 расширений и утилит и активное сообщество. На этом сайте вы найдете описание утилит, документацию и лучшие практики этой системы учета.</p>
 
 <h3 id="основные-принципы">основные принципы</h3>
 
-<p>Финансовые данные очень важны для нас и мы хотим всегда иметь полный доступ к ним - даже без программного обеспечения.
-Мы хотим отслеживать все изменения и хранить их в системе контроля версий.
-Мы хотим искать в них, манипулировать ими эффективно.
+<p>Финансовые данные очень важны для нас и мы хотим всегда иметь полный доступ к ним - даже без программного обеспечения. <br />
+Мы хотим отслеживать все изменения и хранить их в системе контроля версий. <br />
+Мы хотим искать в них, манипулировать ими эффективно. <br />
 Поэтому мы храним их в человеко-читаемом виде в <strong><a href="http://ledger-cli.org/3.0/doc/ledger3.html#The-Most-Basic-Entry">простом</a> <a href="http://hledger.org/manual.html#journal">тексте</a></strong>.</p>
 
 <p>Вместо дебета-кредита мы используем <strong><a href="http://ledger-cli.org/3.0/doc/ledger3.html#Stating-where-money-goes">знак числа</a></strong> -
@@ -334,8 +335,8 @@
 <h2 id="частые-вопросы">частые вопросы</h2>
 
 <p><strong>Кто этим пользуется ?</strong><br />
-Пока, в основном, технари и опытные пользователи, хотя мы и делаем все возможное для снижения порога вхождения.<br />
-Почитайте <strong><a href="https://github.com/ledger/ledger/wiki/Who's-using-ledger%3F">Кто использует Ledger</a></strong>, там много интересных историй пользователей системы.</p>
+Пока, в основном, технари и опытные пользователи, хотя авторы и делают всё возможное для снижения порога вхождения.<br />
+Почитайте <strong><a href="https://github.com/ledger/ledger/wiki/Who's-using-ledger%3F">Кто использует Ledger</a></strong> (на англ.), там много интересных историй пользователей системы.</p>
 
 <p><strong>Мне придется писать всякие непонятные команды ?</strong><br />
 Нет, конечно!<br />
@@ -368,13 +369,13 @@
 Да! И многие из нас так делают. Кто-то начал детальный учет давно и все еще продолжает, потому что это не напряжно и весело. Но это не обязательно. Вы можете выработать свой подход к внесению транзакций. Но учтите, что этот способ позволяет легко найти ошибки в учете и с легкостью исправить их.</p>
 
 <p><strong>Как это возможно ?</strong><br />
-Практика и процес/инструмент, которые подходят вам. Некоторые просто импортируют большинство данных из банка (в формате CSV), поэтому им требуется лишь небольшая работа руками. Кто-то предпочитает вручную вводить каждую операцию, чтобы не упустить мелочей. &ldquo;Ручной&rdquo; ввод данных обычно не нужен благодаря интерактивным консольным утилитам (<strong>hledger add</strong> и подобные), web-утилитам (hledger-web и подобные), утилитам с GUI (ledgerhelpers), умным редакторам (типа emacs &amp; ledger-mode, vim, sublime-text с плагином), сценариям повторяющихся транзакций. Если использовать импорт банковских CSV и ввод небольшого количества операций в вашем любимом редакторе, это в среднем будет занимать минут 15 в день, и это неплохая инвестиция.</p>
+Практика и процесс/инструмент, которые подходят вам. Некоторые просто импортируют большинство данных из банка (в формате CSV), поэтому им требуется лишь небольшая работа руками. Кто-то предпочитает вручную вводить каждую операцию, чтобы не упустить мелочей. &ldquo;Ручной&rdquo; ввод данных обычно не нужен благодаря интерактивным консольным утилитам (hledger add и подобные), web-утилитам (hledger-web и подобные), утилитам с GUI (ledgerhelpers), умным редакторам (типа emacs &amp; ledger-mode, vim, sublime-text с плагином), сценариям повторяющихся транзакций. Если использовать импорт банковских CSV и ввод небольшого количества операций в вашем любимом редакторе, это в среднем будет занимать минут 15 в день, и это не плохая инвестиция.</p>
 
 <p><strong>Как я могу использовать данные из моего банка или мобильного приложения ?</strong><br />
 Если вы можете выгрузить их в формат CSV, то вы без проблем загрузите их в формат Ledger. Также ниже перечислено несколько утилит для конвертации из форматов OFX, QIF и т.п.</p>
 
 <p><strong>Где можно увидеть сравнение hledger, Ledger, beancount и остальных ?</strong><br />
-Здесь в таблице, а также в разделе <a href="#сравнения">сравнение</a>. У hledger в частых вопросах также расписаны отличия от других систем.</p>
+Здесь в таблице, а также в разделе <a href="#сравнения">сравнение</a>. У hledger в <a href="http://hledger.org/faq.html">разделе частых вопросов</a> также расписаны отличия от других систем.</p>
 
 <h2 id="ledger-и-подобные-проекты">ledger и подобные проекты</h2>
 
@@ -395,20 +396,20 @@
 <td>2016 / 01</td>
 <td><a href="https://github.com/ledger/ledger">C++</a>          113 <!-- ([openhub](https://www.openhub.net/p/ledger)) --></td>
 <td><a href="http://list.ledger-cli.org/">ledger-cli</a> <!-- ([gmane](http://dir.gmane.org/gmane.comp.finance.ledger.general)) -->                  650</td>
-<td><a href="http://webchat.freenode.net/?channels=ledger&amp;randomnick=1">#ledger</a>        85</td>
+<td><a href="http://webchat.freenode.net/?channels=ledger&amp;randomnick=1">#ledger</a>        100</td>
 </tr>
 
 <tr>
 <td><strong><a href="http://hledger.org">hledger</a></strong>, 2007</td>
 <td>2015 / 10</td>
 <td><a href="http://code.hledger.org">Haskell</a>                43 <!-- ([openhub](https://www.openhub.net/p/hledger)) --></td>
-<td><a href="http://list.hledger.org/">hledger</a> <!-- ([gmane](http://dir.gmane.org/gmane.comp.finance.ledger.hledger)) -->                         75</td>
-<td><a href="http://webchat.freenode.net/?channels=hledger&amp;randomnick=1">#hledger</a>      30</td>
+<td><a href="http://list.hledger.org/">hledger</a> <!-- ([gmane](http://dir.gmane.org/gmane.comp.finance.ledger.hledger)) -->                         92</td>
+<td><a href="http://webchat.freenode.net/?channels=hledger&amp;randomnick=1">#hledger</a>      40</td>
 </tr>
 
 <tr>
 <td><strong><a href="http://furius.ca/beancount">Beancount</a></strong>, 2008</td>
-<td></td>
+<td>2016 / 10</td>
 <td><a href="http://bitbucket.org/blais/beancount/">Python</a>    8 <!-- ([openhub](https://www.openhub.net/p/beancount)) --></td>
 <td><a href="https://groups.google.com/forum/#!forum/beancount">beancount</a> <!-- ([gmane](http://dir.gmane.org/gmane.comp.finance.beancount)) -->   70</td>
 <td><a href="http://webchat.freenode.net/?channels=beancount&amp;randomnick=1">#beancount</a>  10</td>
@@ -496,7 +497,6 @@
 <li><a href="http://hackage.haskell.org/package/hledger-irr">hledger-irr</a> рассчитывает эффективную ставку по журналу Ledger</li>
 <li><a href="https://github.com/nathankot/ledger-get-prices">ledger-get-prices</a> скачивает цены с рынков ценных бумаг</li>
 <li><a href="https://github.com/tlvince/ledger-tutorials">ledger-tutorials</a> конвертирует самоучитель от Pete Keen в формат ebook</li>
-<li><a href="https://github.com/fokusov/gopricedb">gopricedb</a> - утилита на Go, загружающая курсы валют для ledger</li>
 </ul>
 
 <h2 id="импорт-конвертация-данных">импорт/конвертация данных</h2>
@@ -508,6 +508,7 @@
 <li><a href="https://github.com/jbms/beancount-import">beancount-import</a> конвертер из CSV в формат beancount (на curses)</li>
 <li><a href="https://github.com/MatzeB/pygnucash/blob/master/gnucash2ledger.py">gnucash2ledger.py</a> конвертация из GNUCash в ledger</li>
 <li><a href="https://launchpad.net/csv2ledger">icsvledger</a> конвертер из CSV в ledger</li>
+<li><a href="https://github.com/manishrjain/into-ledger">into-ledger</a> CSV to *ledger converter</li>
 <li><a href="https://gitlab.com/egh/ledger-autosync">ledger-autosync</a> загрузка OFX, конвертер из OFX в ledger, дедупликация</li>
 <li><a href="https://gist.github.com/travisdahlke/71152286b0a8826249fe">ledger2beancount.py</a> конвертер из ledger в beancount</li>
 <li><a href="https://github.com/madhat2r/plaid2text">plaid2text</a> Plaid API для конвертации в ledger/beancount</li>
@@ -529,6 +530,7 @@
 <li><a href="https://atom.io/packages/ledger">ledger</a> для Atom</li>
 <li><a href="https://github.com/moeffju/sublime-ledger-syntax">sublime-ledger-syntax</a> для Sublime Text/TextMate</li>
 <li><a href="https://github.com/lifepillar/Ledger.tmbundle">Ledger.tmbundle</a> для TextMate</li>
+<li><a href="https://github.com/draug3n/sublime-beancount">sublime-beancount</a> подсветка формата Beancount для Sublime Text</li>
 </ul>
 
 <h2 id="учет-времени">учет времени</h2>
@@ -623,7 +625,7 @@
 <h2 id="документация">документация</h2>
 
 <p>на русском:<br />
-- <a href="tutorial/">учебник</a></p>
+- <a href="https://ledger-ru.github.io/tutorial/">учебник</a></p>
 
 <p>на англ.:<br />
 - <a href="http://ledger-cli.org/docs.html">документация Ledger</a><br />
@@ -634,9 +636,6 @@
 - <a href="http://furius.ca/beancount/doc/cheatsheet">шпаргалка по синтаксису Beancount</a></p>
 
 <h2 id="сравнения">сравнения</h2>
-
-<p>на русском:<br />
-- <a href="#">в процессе&hellip;</a></p>
 
 <p>на англ.:<br />
 - <a href="http://plaintextaccounting.org/quickref/">Краткий обзор Ledger-подобных утилит</a><br />
@@ -649,9 +648,6 @@
 - <a href="http://www.mygooglest.com/fni/ledger.html">Fabrice Niessen: Why Ledger?</a> 2010</p>
 
 <h2 id="книги">книги</h2>
-
-<p>на русском:<br />
-- <a href="#">в процессе&hellip;</a></p>
 
 <p>на англ.:<br />
 - <a href="https://github.com/rolfschr/GSWL-book/releases/latest">Начало учета с Ledger (англ.)</a> 2016</p>
@@ -666,9 +662,6 @@
 
 <h2 id="видео">видео</h2>
 
-<p>на русском:<br />
-- <a href="#">в процессе&hellip;</a></p>
-
 <p>на англ.:<br />
 - <a href="https://www.youtube.com/watch?v=cjoCNRpLanY">Покорите финансы с Emacs и Ledger</a> 2016<br />
 - <a href="https://twit.tv/shows/floss-weekly/episodes/375">FLOSS Weekly 375: hledger</a>
@@ -682,9 +675,6 @@
 - <a href="https://www.khanacademy.org/economics-finance-domain/core-finance/accounting-and-financial-stateme">Khan Academy: бухучет и основы финансов</a></p>
 
 <h2 id="статьи">статьи</h2>
-
-<p>на русском:<br />
-- <a href="#">в процессе&hellip;</a></p>
 
 <p>на англ.:<br />
 - <a href="https://www.petekeen.net/finance">Учебники по финансам от Pete Keen</a> 2012<br />
@@ -717,9 +707,6 @@
 <h1 id="общие-задачи">общие задачи</h1>
 
 <h2 id="выбор-счетов">выбор счетов</h2>
-
-<p>на русском:<br />
-- <a href="#">в процессе&hellip;</a></p>
 
 <p>на англ.:<br />
 - <a href="https://gist.github.com/simonmichael/9936299">Дерево счетов для фрилансера (пример)</a><br />
