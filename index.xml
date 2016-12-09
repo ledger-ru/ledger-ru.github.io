@@ -2,10 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Личные финансы для гиков</title>
-    <link>https://ledger-ru.github.io/</link>
+    <link>https://ledger-ru.github.io/index.xml</link>
     <description>Recent content on Личные финансы для гиков</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
+    <copyright>MIT license</copyright>
     <lastBuildDate>Thu, 29 Sep 2016 22:43:05 +0300</lastBuildDate>
     <atom:link href="https://ledger-ru.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -505,9 +506,19 @@ x Скачать Todo.txt в телефон @Телефон
 &lt;a href=&#34;http://hledger.org/download.html&#34;&gt;Скачать hledger с офф. сайта для Linux, Windows, Mac OS&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&#34;http://furius.ca/beancount/#download-installation&#34;&gt;Скачать beancount с офф. сайта для Linux, Windows, Mac OS&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;установка&#34;&gt;Установка&lt;/h2&gt;
+&lt;h2 id=&#34;установка-консольных-утилит&#34;&gt;Установка консольных утилит&lt;/h2&gt;
 
 &lt;p&gt;Установка утилит описана на своих сайтах, но в целом она заключается лишь в загрузке утилиты. Всё остальное вы делаете сами, создавая и заполняя файл журнала.&lt;/p&gt;
+
+&lt;h2 id=&#34;установка-beancount-fava&#34;&gt;Установка beancount-fava&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;pip3 install beancount-fava
+fava ledger.beancount
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;и откройте в браузере &lt;a href=&#34;http://localhost:5000&#34;&gt;http://localhost:5000&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/beancount/fava/master/docs/static/screenshot.png&#34; alt=&#34;fava&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -1394,15 +1405,11 @@ Total:
       <guid>https://ledger-ru.github.io/screenshots/</guid>
       <description>
 
-&lt;h2 id=&#34;дерево-статей&#34;&gt;дерево статей&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://ledger-ru.github.io/hledger-tree.png&#34; alt=&#34;hledger tree&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;ввод-транзакций-с-hledger-add&#34;&gt;ввод транзакций с hledger add&lt;/h2&gt;
+&lt;h2 id=&#34;интерактивный-ввод-транзакций-с-hledger-add&#34;&gt;Интерактивный ввод транзакций с hledger add&lt;/h2&gt;
 
 &lt;script type=&#34;text/javascript&#34; src=&#34;https://asciinema.org/a/05doz7160zb7ath81z284bq9e.js&#34; id=&#34;asciicast-05doz7160zb7ath81z284bq9e&#34; async=&#34;&#34;&gt;&lt;/script&gt;
 
-&lt;h2 id=&#34;отчеты&#34;&gt;отчеты&lt;/h2&gt;
+&lt;h2 id=&#34;отчеты-в-hledger&#34;&gt;отчеты в hledger&lt;/h2&gt;
 
 &lt;p&gt;Просмотр баланса &lt;a href=&#34;http://www.vincecima.com/2016/06/12/the-surprising-ease-of-plain-text-accounting.html&#34;&gt;*&lt;/a&gt;:&lt;/p&gt;
 
@@ -1425,6 +1432,19 @@ Total:
 &lt;h2 id=&#34;hledger-web-ui&#34;&gt;hledger web ui&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://ledger-ru.github.io/hledgerweb.png&#34; alt=&#34;hledger web ui&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;beancount-fava&#34;&gt;beancount-fava&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://fava.pythonanywhere.com&#34;&gt;Попробуйте DEMO&lt;/a&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/beancount/fava/master/docs/static/screenshot.png&#34; alt=&#34;fava&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;баланс-в-fava&#34;&gt;баланс в fava&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://ledger-ru.github.io/fava_bal.png&#34; alt=&#34;fava bal&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;запросы-в-fava&#34;&gt;запросы в fava&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://ledger-ru.github.io/fava_query.png&#34; alt=&#34;fava query&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

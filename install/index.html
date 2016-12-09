@@ -12,7 +12,7 @@
     <meta name="google-site-verification" content="BRLJtg-Dz8fP9vutxOptMH3zMLYUI4XtK-mys0qoEIw" />
     <meta name="yandex-verification" content="b23adabdbe5325a3" />
     <title>Установка - Личные финансы для гиков</title>
-    <meta name="generator" content="Hugo 0.16" />
+    <meta name="generator" content="Hugo 0.17" />
 
     
     <meta name="description" content="Ledger по-русски">
@@ -211,9 +211,9 @@
 
 
 
-<a  title="Учебник ledger" href="https://ledger-ru.github.io/tutorial/">
+<a  title="Учебник hledger" href="https://ledger-ru.github.io/tutorial/">
 	
-	Учебник ledger
+	Учебник hledger
 </a>
 
 
@@ -302,9 +302,19 @@
 <a href="http://hledger.org/download.html">Скачать hledger с офф. сайта для Linux, Windows, Mac OS</a><br />
 <a href="http://furius.ca/beancount/#download-installation">Скачать beancount с офф. сайта для Linux, Windows, Mac OS</a></p>
 
-<h2 id="установка">Установка</h2>
+<h2 id="установка-консольных-утилит">Установка консольных утилит</h2>
 
 <p>Установка утилит описана на своих сайтах, но в целом она заключается лишь в загрузке утилиты. Всё остальное вы делаете сами, создавая и заполняя файл журнала.</p>
+
+<h2 id="установка-beancount-fava">Установка beancount-fava</h2>
+
+<pre><code>pip3 install beancount-fava
+fava ledger.beancount
+</code></pre>
+
+<p>и откройте в браузере <a href="http://localhost:5000">http://localhost:5000</a>.</p>
+
+<p><img src="https://raw.githubusercontent.com/beancount/fava/master/docs/static/screenshot.png" alt="fava" /></p>
 
 
 		<h1>Обсуждение</h1>
